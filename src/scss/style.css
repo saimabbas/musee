@@ -475,4 +475,233 @@
 .appmainbox .metagalleriesbox .metagalleriesimg img {
   width: 48%;
   height: 30rem;
+}
+.appmainbox .futuresection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 90%;
+  margin: 6rem auto 1rem auto;
+  position: relative;
+}
+.appmainbox .futuresection .futuresectionleft {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 45%;
+}
+.appmainbox .futuresection .futuresectionleft .marketplaceheading {
+  margin: 5rem 0 0 0;
+  position: relative;
+}
+.appmainbox .futuresection .futuresectionleft .marketplaceheading h6 {
+  position: absolute;
+  top: -6.5rem;
+  left: -5rem;
+  font-size: 10rem;
+  color: #f0f0f0;
+  font-weight: 500;
+  font-family: Alpina;
+  font-style: italic;
+  z-index: -2;
+}
+.appmainbox .futuresection .futuresectionleft .marketplaceheading h5 {
+  font-size: 5rem;
+  color: #000000;
+  font-weight: 600;
+  font-family: Alpina;
+  font-style: italic;
+  z-index: 2;
+}
+.appmainbox .futuresection .futuresectionleft p {
+  font-size: 1.45rem;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  color: #000000;
+  margin: 1.75rem 0;
+  line-height: 22px;
+}
+.appmainbox .futuresection .futuresectionleft .pointsbox {
+  margin: 0 1rem 1rem 1.75rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  flex-direction: column;
+}
+.appmainbox .futuresection .futuresectionleft .pointsbox .mainpoint {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin: 0 0 1.75rem 0;
+}
+.appmainbox .futuresection .futuresectionleft .pointsbox .mainpoint svg {
+  min-width: 2rem;
+  min-height: 2rem;
+  max-width: 2rem;
+  max-height: 2rem;
+  color: #000000;
+}
+.appmainbox .futuresection .futuresectionleft .pointsbox .mainpoint h6 {
+  font-size: 1.45rem;
+  color: #000000;
+  font-weight: 400;
+  margin: 0rem 0 0 1.5rem;
+}
+.appmainbox .futuresection .futuresectionleft img {
+  width: 90%;
+  height: 55rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 7rem 0;
+}
+.appmainbox .futuresection .futuresectionleft .createdwantedbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  background-color: #000000;
+  padding: 2.5rem;
+}
+.appmainbox .futuresection .futuresectionleft .createdwantedbox h6 {
+  font-size: 4.5rem;
+  font-weight: 400;
+  font-family: Alpina;
+  font-style: italic;
+  color: #ffffff;
+}
+.appmainbox .futuresection .futuresectionleft .createdwantedbox button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 1000px;
+  font-size: 1.8rem;
+  color: #000000;
+  font-weight: 600;
+  font-family: "Inconsolata", monospace;
+  padding: 1.25rem 0;
+  border: unset;
+  margin: 2rem 0 0 0;
+}
+.appmainbox .futuresection .futuresectionright {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 48%;
+  margin: 16rem 0 0 0;
+}
+.appmainbox .futuresection .futuresectionright img {
+  height: 55rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 80%;
+}
+.appmainbox .futuresection .futuresectionright .joinbox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 90%;
+  margin: 6rem 0 0 0;
+}
+.appmainbox .futuresection .futuresectionright .joinbox h6 {
+  font-size: 3.75rem;
+  color: #000000;
+  font-weight: 600;
+  font-family: Alpina;
+  font-style: normal;
+}
+.appmainbox .futuresection .futuresectionright .joinbox h6 span {
+  font-family: "Inconsolata", monospace;
+  font-style: italic;
+}
+.appmainbox .futuresection .futuresectionright .joinbox .heroinputbtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 2rem auto 0 0;
+  border-radius: 1000px;
+  background-color: #f7f7f7;
+  padding: 0.75rem 0.75rem 0.75rem 3rem;
+}
+.appmainbox .futuresection .futuresectionright .joinbox .heroinputbtn input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+  height: 100%;
+  font-size: 1.6rem;
+  color: #808080;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  border: unset;
+  background-color: transparent;
+}
+.appmainbox .futuresection .futuresectionright .joinbox .heroinputbtn inputinput::-moz-placeholder {
+  font-size: 1.6rem;
+  color: #808080;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+.appmainbox .futuresection .futuresectionright .joinbox .heroinputbtn inputinput:-ms-input-placeholder {
+  font-size: 1.6rem;
+  color: #808080;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+.appmainbox .futuresection .futuresectionright .joinbox .heroinputbtn inputinput::placeholder {
+  font-size: 1.6rem;
+  color: #808080;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+.appmainbox .futuresection .futuresectionright .joinbox .heroinputbtn input:focus {
+  outline: none;
+}
+.appmainbox .futuresection .futuresectionright .joinbox .heroinputbtn button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 500;
+  font-family: "Inconsolata", monospace;
+  background-color: #000000;
+  border-radius: 1000px;
+  padding: 2rem 0;
+  border: unset;
+  width: 40%;
+}
+.appmainbox .futuresection .futuresectionright .frlastimgbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 12rem 0 0 0;
+}
+.appmainbox .futuresection .futuresectionright .frlastimgbox img.frleft {
+  width: 45%;
+  height: 30rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: translate(-25%, 0);
+}
+.appmainbox .futuresection .futuresectionright .frlastimgbox img.frright {
+  width: 40%;
+  height: 18rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.appmainbox .futuresection img.futuresideimg {
+  position: absolute;
+  bottom: 28%;
+  right: -20%;
+  height: 43rem;
+  width: 20rem;
 }/*# sourceMappingURL=style.css.map */

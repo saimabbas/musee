@@ -5,6 +5,11 @@ import Tag from "./assets/img/tag.png";
 import Roadmap from "./assets/img/roadmap.png";
 import Gallery1 from "./assets/img/gallery1.png";
 import Gallery2 from "./assets/img/gallery2.png";
+import FutureImg from "./assets/img/futureimg.png";
+import FutureImg2 from "./assets/img/futureimg2.png";
+import FutureImg3 from "./assets/img/futureimg3.png";
+import FutureImg4 from "./assets/img/futureimg4.png";
+import FutureImg5 from "./assets/img/futureimg5.png";
 import { MdCircle } from "react-icons/md";
 
 const Home = () => {
@@ -211,6 +216,61 @@ const Home = () => {
             <img src={Gallery1} alt="" />
             <img src={Gallery2} alt="" />
           </div>
+        </div>
+      </div>
+
+      {/* FUTURE SECTION  */}
+      <div className="box">
+        <div className="futuresection">
+          <div className="futuresectionleft">
+            <div className="marketplaceheading">
+              <h6>04</h6>
+              <h5>The future of Musée.</h5>
+            </div>
+            <p>
+              Nulla purus dui bibendum cursus pulvinar amet nulla. Nunc gravida
+              in ut fermentum tristique molestie. Risus venenatis, ullamcorper
+              orci, sit ultrices neque.
+            </p>
+            <div className="pointsbox">
+              <div className="mainpoint">
+                <MdCircle />
+                <h6>Musée Art City: The hub of art in the metaverse.</h6>
+              </div>
+              <div className="mainpoint">
+                <MdCircle />
+                <h6>
+                  $MUSEE Rewards: Distributed to land owners and platform users.
+                </h6>
+              </div>
+              <div className="mainpoint">
+                <MdCircle />
+                <h6>Musée DAO</h6>
+              </div>
+            </div>
+            <img src={FutureImg} alt="" />
+            <div className="createdwantedbox">
+              <h6>Creators wanted!</h6>
+              <button>Apply here</button>
+            </div>
+          </div>
+          <div className="futuresectionright">
+            <img src={FutureImg2} alt="" />
+            <div className="joinbox">
+              <h6>
+                <span>Join the waitlist </span> <br />& get early access.
+              </h6>
+              <div className="heroinputbtn">
+                <input type="text" placeholder="Enter email address..." />
+                <button>Get notified</button>
+              </div>
+            </div>
+            <div className="frlastimgbox">
+              <img src={FutureImg3} className="frleft" alt="" />
+              <img src={FutureImg4} className="frright" alt="" />
+            </div>
+          </div>
+          <img src={FutureImg5} className="futuresideimg" alt="" />
         </div>
       </div>
     </div>
