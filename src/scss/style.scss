@@ -92,7 +92,6 @@
         font-style: italic;
         font-weight: 500;
         text-transform: none;
-        text-transform: lowercase;
       }
     }
     .heroinputbtn {
@@ -679,6 +678,269 @@
       right: -20%;
       height: 43rem;
       width: 20rem;
+    }
+  }
+  // FOOTER
+  footer {
+    width: 100%;
+    margin: 4rem 0;
+    .footerbox {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .footerright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+          font-size: 1.4rem;
+          color: #000000;
+          font-weight: 400;
+          font-family: "Inter", sans-serif;
+        }
+      }
+      .footerleft {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        a {
+          text-decoration: none;
+          font-size: 1.4rem;
+          color: #000000;
+          font-weight: 400;
+          font-family: "Inter", sans-serif;
+          margin: 0 0 0 2.5rem;
+        }
+      }
+    }
+  }
+}
+
+// RESPONSIVENESS
+@media screen and (max-width: 1140px) {
+  .appmainbox
+    .marketplacebox
+    .marketplaceleft
+    .marketleftbottom
+    .marketbottomimg
+    img {
+    height: 15rem;
+  }
+  .appmainbox .futuresection img.futuresideimg {
+    height: 35rem;
+    width: 15rem;
+  }
+  .appmainbox .futuresection .futuresectionright .frlastimgbox img.frleft {
+    height: 25rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .appmainbox .herosection h6 {
+    font-size: 6.5rem;
+  }
+  .appmainbox .herosection .heroinputbtn {
+    width: 60%;
+  }
+  .appmainbox .marketplacebox {
+    width: 100%;
+    flex-direction: column;
+    .marketplaceleft {
+      width: 100%;
+      .marketplaceheading {
+        margin: 5rem 0 0 3rem;
+        br {
+          display: none;
+        }
+      }
+      .marketleftbottom .marketbottomimg img {
+        height: 18rem;
+      }
+    }
+    .marketplaceright {
+      width: 100%;
+    }
+  }
+  .appmainbox .roadmapsection {
+    width: 100%;
+    flex-direction: column-reverse;
+    .marketplaceright {
+      width: 100%;
+      img {
+        width: 100%;
+        height: 40rem;
+      }
+    }
+    .marketplaceleft {
+      width: 100%;
+      .marketplaceheading {
+        margin: 10rem 0 0 3rem;
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+  .appmainbox .metagalleriesbox {
+    width: 100%;
+    .metagalleriestext {
+      margin: 10rem 0 0 3rem;
+      p {
+        width: 70%;
+      }
+    }
+  }
+  .appmainbox .futuresection {
+    width: 100%;
+    flex-direction: column;
+    .futuresectionleft {
+      width: 100%;
+      .marketplaceheading {
+        margin: 5rem 0 0 3rem;
+      }
+      img {
+        width: 100%;
+        height: 40rem;
+        margin: 0 0 5rem 0;
+      }
+      .createdwantedbox {
+        width: 70%;
+        margin: 0 auto;
+      }
+    }
+    .futuresectionright {
+      width: 100%;
+      margin: 5rem 0 0 0;
+      .frlastimgbox {
+        margin: 5rem 0 0 0;
+        img.frleft {
+          height: 30rem;
+          width: 33%;
+          transform: translate(-15%, 0);
+        }
+      }
+      .joinbox .heroinputbtn {
+        width: 95%;
+      }
+    }
+    img.futuresideimg {
+      height: 40rem;
+      width: 13rem;
+      right: -7%;
+      bottom: 22%;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .marketplaceheading h5 {
+    font-size: 4.5rem;
+  }
+  .box {
+    padding: 0 2rem;
+  }
+  .appmainbox header .headerbox {
+    padding: 2rem;
+  }
+  .appmainbox .herosection h6 {
+    font-size: 4.5rem;
+    br {
+      display: none;
+    }
+  }
+  .appmainbox .herosection .heroinputbtn {
+    width: 100%;
+  }
+  .appmainbox
+    .marketplacebox
+    .marketplaceleft
+    .marketleftbottom
+    .marketbottomimg
+    img {
+    width: 100%;
+    height: 14.5rem;
+    object-fit: cover;
+    position: absolute;
+    right: 1rem;
+    top: -5rem;
+  }
+  .appmainbox .marketplacebox .marketplaceleft .marketplaceheading h5 {
+    font-size: 4.5rem;
+  }
+  .appmainbox .marketplacebox .marketplaceleft .marketplaceheading {
+    margin: 5rem 0 0 4rem;
+  }
+  .appmainbox .roadmapsection .marketplaceleft .marketplaceheading {
+    margin: 7rem 0 0 4rem;
+  }
+  .appmainbox .roadmapsection .marketplaceleft .marketplaceheading h5 {
+    font-size: 4.5rem;
+  }
+  .appmainbox .metagalleriesbox .metagalleriestext {
+    margin: 7rem 0 0 0rem;
+  }
+  .appmainbox .metagalleriesbox .metagalleriestext .marketplaceheading {
+    margin: 2rem 0 0rem 4rem;
+  }
+  .appmainbox .metagalleriesbox .metagalleriestext .marketplaceheading h5 {
+    font-size: 4.5rem;
+  }
+  .appmainbox .roadmapsection .marketplaceright img {
+    height: 30rem;
+  }
+  .appmainbox .metagalleriesbox .metagalleriesimg {
+    flex-direction: column;
+  }
+  .appmainbox .metagalleriesbox .metagalleriesimg img {
+    height: 30rem;
+    width: 100%;
+    margin: 0 0 2rem 0;
+  }
+  .appmainbox .futuresection {
+    margin: 4rem 0;
+  }
+  .appmainbox .futuresection .futuresectionleft .marketplaceheading {
+    margin: 5rem 0 0 4rem;
+  }
+  .appmainbox .futuresection .futuresectionleft img {
+    width: 100%;
+    height: 30rem;
+  }
+  .appmainbox .futuresection .futuresectionleft .createdwantedbox {
+    width: 100%;
+  }
+  .appmainbox .futuresection img.futuresideimg {
+    display: none;
+  }
+  .appmainbox .futuresection .futuresectionright img {
+    height: 30rem;
+    object-fit: cover;
+    width: 100%;
+  }
+  .appmainbox .futuresection .futuresectionright .joinbox {
+    width: 100%;
+    margin: 4rem 0 0 0;
+  }
+  .appmainbox .futuresection .futuresectionright .joinbox .heroinputbtn {
+    width: 100%;
+  }
+  .appmainbox .futuresection .futuresectionright .joinbox h6 {
+    text-align: center;
+  }
+  .appmainbox .futuresection .futuresectionright .frlastimgbox img.frleft {
+    height: 30rem;
+    width: 55%;
+    transform: translate(-15%, 0);
+  }
+  .appmainbox .futuresection .futuresectionright .frlastimgbox img.frright {
+    width: 40%;
+    height: 13rem;
+    object-fit: cover;
+  }
+  .appmainbox footer .footerbox {
+    flex-direction: column;
+    .footerleft {
+      margin: 3rem 0 0 0;
     }
   }
 }

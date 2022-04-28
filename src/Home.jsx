@@ -32,8 +32,9 @@ const Home = () => {
       <div className="box">
         <div className="herosection">
           <h6>
-            Musée <span>is the next</span> <br /> WEB3 ART{" "}
-            <span>marketplace.</span>
+            Introducing<span> Musée,</span> <br />
+            The
+            <span> bub </span> of <span>web3 art.</span>
           </h6>
           <div className="heroinputbtn">
             <input type="text" placeholder="Enter email address..." />
@@ -273,6 +274,21 @@ const Home = () => {
           <img src={FutureImg5} className="futuresideimg" alt="" />
         </div>
       </div>
+
+      {/* FOOTER SECTION  */}
+      <footer>
+        <div className="box">
+          <div className="footerbox">
+            <div className="footerright">
+              <p>© 2022 Inverted Studios Inc. All rights reserved.</p>
+            </div>
+            <div className="footerleft">
+              <a href="#">Medium</a>
+              <a href="#">Twitter</a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };

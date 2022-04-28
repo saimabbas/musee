@@ -91,7 +91,6 @@
   font-style: italic;
   font-weight: 500;
   text-transform: none;
-  text-transform: lowercase;
 }
 .appmainbox .herosection .heroinputbtn {
   display: flex;
@@ -704,4 +703,290 @@
   right: -20%;
   height: 43rem;
   width: 20rem;
+}
+.appmainbox footer {
+  width: 100%;
+  margin: 4rem 0;
+}
+.appmainbox footer .footerbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.appmainbox footer .footerbox .footerright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.appmainbox footer .footerbox .footerright p {
+  font-size: 1.4rem;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+}
+.appmainbox footer .footerbox .footerleft {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.appmainbox footer .footerbox .footerleft a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  margin: 0 0 0 2.5rem;
+}
+
+@media screen and (max-width: 1140px) {
+  .appmainbox .marketplacebox .marketplaceleft .marketleftbottom .marketbottomimg img {
+    height: 15rem;
+  }
+
+  .appmainbox .futuresection img.futuresideimg {
+    height: 35rem;
+    width: 15rem;
+  }
+
+  .appmainbox .futuresection .futuresectionright .frlastimgbox img.frleft {
+    height: 25rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .appmainbox .herosection h6 {
+    font-size: 6.5rem;
+  }
+
+  .appmainbox .herosection .heroinputbtn {
+    width: 60%;
+  }
+
+  .appmainbox .marketplacebox {
+    width: 100%;
+    flex-direction: column;
+  }
+  .appmainbox .marketplacebox .marketplaceleft {
+    width: 100%;
+  }
+  .appmainbox .marketplacebox .marketplaceleft .marketplaceheading {
+    margin: 5rem 0 0 3rem;
+  }
+  .appmainbox .marketplacebox .marketplaceleft .marketplaceheading br {
+    display: none;
+  }
+  .appmainbox .marketplacebox .marketplaceleft .marketleftbottom .marketbottomimg img {
+    height: 18rem;
+  }
+  .appmainbox .marketplacebox .marketplaceright {
+    width: 100%;
+  }
+
+  .appmainbox .roadmapsection {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .appmainbox .roadmapsection .marketplaceright {
+    width: 100%;
+  }
+  .appmainbox .roadmapsection .marketplaceright img {
+    width: 100%;
+    height: 40rem;
+  }
+  .appmainbox .roadmapsection .marketplaceleft {
+    width: 100%;
+  }
+  .appmainbox .roadmapsection .marketplaceleft .marketplaceheading {
+    margin: 10rem 0 0 3rem;
+  }
+  .appmainbox .roadmapsection .marketplaceleft .marketplaceheading br {
+    display: none;
+  }
+
+  .appmainbox .metagalleriesbox {
+    width: 100%;
+  }
+  .appmainbox .metagalleriesbox .metagalleriestext {
+    margin: 10rem 0 0 3rem;
+  }
+  .appmainbox .metagalleriesbox .metagalleriestext p {
+    width: 70%;
+  }
+
+  .appmainbox .futuresection {
+    width: 100%;
+    flex-direction: column;
+  }
+  .appmainbox .futuresection .futuresectionleft {
+    width: 100%;
+  }
+  .appmainbox .futuresection .futuresectionleft .marketplaceheading {
+    margin: 5rem 0 0 3rem;
+  }
+  .appmainbox .futuresection .futuresectionleft img {
+    width: 100%;
+    height: 40rem;
+    margin: 0 0 5rem 0;
+  }
+  .appmainbox .futuresection .futuresectionleft .createdwantedbox {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .appmainbox .futuresection .futuresectionright {
+    width: 100%;
+    margin: 5rem 0 0 0;
+  }
+  .appmainbox .futuresection .futuresectionright .frlastimgbox {
+    margin: 5rem 0 0 0;
+  }
+  .appmainbox .futuresection .futuresectionright .frlastimgbox img.frleft {
+    height: 30rem;
+    width: 33%;
+    transform: translate(-15%, 0);
+  }
+  .appmainbox .futuresection .futuresectionright .joinbox .heroinputbtn {
+    width: 95%;
+  }
+  .appmainbox .futuresection img.futuresideimg {
+    height: 40rem;
+    width: 13rem;
+    right: -7%;
+    bottom: 22%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .marketplaceheading h5 {
+    font-size: 4.5rem;
+  }
+
+  .box {
+    padding: 0 2rem;
+  }
+
+  .appmainbox header .headerbox {
+    padding: 2rem;
+  }
+
+  .appmainbox .herosection h6 {
+    font-size: 4.5rem;
+  }
+  .appmainbox .herosection h6 br {
+    display: none;
+  }
+
+  .appmainbox .herosection .heroinputbtn {
+    width: 100%;
+  }
+
+  .appmainbox .marketplacebox .marketplaceleft .marketleftbottom .marketbottomimg img {
+    width: 100%;
+    height: 14.5rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: absolute;
+    right: 1rem;
+    top: -5rem;
+  }
+
+  .appmainbox .marketplacebox .marketplaceleft .marketplaceheading h5 {
+    font-size: 4.5rem;
+  }
+
+  .appmainbox .marketplacebox .marketplaceleft .marketplaceheading {
+    margin: 5rem 0 0 4rem;
+  }
+
+  .appmainbox .roadmapsection .marketplaceleft .marketplaceheading {
+    margin: 7rem 0 0 4rem;
+  }
+
+  .appmainbox .roadmapsection .marketplaceleft .marketplaceheading h5 {
+    font-size: 4.5rem;
+  }
+
+  .appmainbox .metagalleriesbox .metagalleriestext {
+    margin: 7rem 0 0 0rem;
+  }
+
+  .appmainbox .metagalleriesbox .metagalleriestext .marketplaceheading {
+    margin: 2rem 0 0rem 4rem;
+  }
+
+  .appmainbox .metagalleriesbox .metagalleriestext .marketplaceheading h5 {
+    font-size: 4.5rem;
+  }
+
+  .appmainbox .roadmapsection .marketplaceright img {
+    height: 30rem;
+  }
+
+  .appmainbox .metagalleriesbox .metagalleriesimg {
+    flex-direction: column;
+  }
+
+  .appmainbox .metagalleriesbox .metagalleriesimg img {
+    height: 30rem;
+    width: 100%;
+    margin: 0 0 2rem 0;
+  }
+
+  .appmainbox .futuresection {
+    margin: 4rem 0;
+  }
+
+  .appmainbox .futuresection .futuresectionleft .marketplaceheading {
+    margin: 5rem 0 0 4rem;
+  }
+
+  .appmainbox .futuresection .futuresectionleft img {
+    width: 100%;
+    height: 30rem;
+  }
+
+  .appmainbox .futuresection .futuresectionleft .createdwantedbox {
+    width: 100%;
+  }
+
+  .appmainbox .futuresection img.futuresideimg {
+    display: none;
+  }
+
+  .appmainbox .futuresection .futuresectionright img {
+    height: 30rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+  }
+
+  .appmainbox .futuresection .futuresectionright .joinbox {
+    width: 100%;
+    margin: 4rem 0 0 0;
+  }
+
+  .appmainbox .futuresection .futuresectionright .joinbox .heroinputbtn {
+    width: 100%;
+  }
+
+  .appmainbox .futuresection .futuresectionright .joinbox h6 {
+    text-align: center;
+  }
+
+  .appmainbox .futuresection .futuresectionright .frlastimgbox img.frleft {
+    height: 30rem;
+    width: 55%;
+    transform: translate(-15%, 0);
+  }
+
+  .appmainbox .futuresection .futuresectionright .frlastimgbox img.frright {
+    width: 40%;
+    height: 13rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .appmainbox footer .footerbox {
+    flex-direction: column;
+  }
+  .appmainbox footer .footerbox .footerleft {
+    margin: 3rem 0 0 0;
+  }
 }/*# sourceMappingURL=style.css.map */
