@@ -35,7 +35,7 @@ const Home = () => {
           <h6>
             Introducing<span> Musée,</span> <br />
             The
-            <span> bub </span> of <span>web3 art.</span>
+            <span> hub </span> of <span>web3 art.</span>
           </h6>
           <div className="heroinputbtn">
             <input type="text" placeholder="Enter email address..." />
