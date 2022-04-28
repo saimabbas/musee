@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: Alpina;
-  src: url(../assets/fonts/GT-Alpina.ttf) format("truetype");
+  src: url(../assets/fonts/GT-Alpina.ttf) format("opentype");
   font-display: block;
 }
 @font-face {
@@ -79,6 +79,15 @@
     align-items: center;
     flex-direction: column;
     margin: 4rem auto;
+    p {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #666666;
+      font-family: "Inter", sans-serif;
+      width: 100%;
+      text-align: center;
+      margin: 0 0 2rem 0;
+    }
     h6 {
       font-size: 8.5rem;
       font-weight: 500;
@@ -136,8 +145,15 @@
         background-color: #000000;
         border-radius: 1000px;
         padding: 2rem 0;
-        border: unset;
+        border: 1px solid transparent;
         width: 40%;
+        cursor: pointer;
+      }
+      button:hover {
+        border: 1px solid #000000;
+        background-color: #f7f7f7;
+        color: #000000;
+        transition: 0.5s;
       }
     }
   }
@@ -163,7 +179,7 @@
           left: -5rem;
           font-size: 10rem;
           color: #f0f0f0;
-          font-weight: 500;
+          font-weight: 200;
           font-family: Alpina;
           font-style: italic;
           z-index: -2;
@@ -171,7 +187,7 @@
         h5 {
           font-size: 5rem;
           color: #000000;
-          font-weight: 600;
+          font-weight: 500;
           font-family: Alpina;
           font-style: italic;
           z-index: 2;
@@ -228,7 +244,7 @@
           h5 {
             font-size: 2.75rem;
             color: #000000;
-            font-weight: 600;
+            font-weight: 500;
             font-family: Alpina;
             font-style: italic;
             margin: 0 0 1.75rem 0;
@@ -257,7 +273,7 @@
       align-items: flex-start;
       flex-direction: column;
       width: 48%;
-      img {
+      video {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -266,7 +282,7 @@
         margin: 2rem 0 0 2rem;
         font-size: 2.75rem;
         color: #000000;
-        font-weight: 600;
+        font-weight: 500;
         font-family: Alpina;
         font-style: italic;
       }
@@ -305,7 +321,7 @@
           left: -5rem;
           font-size: 10rem;
           color: #f0f0f0;
-          font-weight: 500;
+          font-weight: 200;
           font-family: Alpina;
           font-style: italic;
           z-index: -2;
@@ -313,7 +329,7 @@
         h5 {
           font-size: 5rem;
           color: #000000;
-          font-weight: 600;
+          font-weight: 500;
           font-family: Alpina;
           font-style: italic;
           z-index: 2;
@@ -370,7 +386,7 @@
           h5 {
             font-size: 2.75rem;
             color: #000000;
-            font-weight: 600;
+            font-weight: 500;
             font-family: Alpina;
             font-style: italic;
             margin: 0 0 1.75rem 0;
@@ -403,7 +419,7 @@
           left: -5rem;
           font-size: 10rem;
           color: #f0f0f0;
-          font-weight: 500;
+          font-weight: 200;
           font-family: Alpina;
           font-style: italic;
           z-index: -2;
@@ -411,7 +427,7 @@
         h5 {
           font-size: 5rem;
           color: #000000;
-          font-weight: 600;
+          font-weight: 500;
           font-family: Alpina;
           font-style: italic;
           z-index: 2;
@@ -489,7 +505,7 @@
           left: -5rem;
           font-size: 10rem;
           color: #f0f0f0;
-          font-weight: 500;
+          font-weight: 200;
           font-family: Alpina;
           font-style: italic;
           z-index: -2;
@@ -497,7 +513,7 @@
         h5 {
           font-size: 5rem;
           color: #000000;
-          font-weight: 600;
+          font-weight: 500;
           font-family: Alpina;
           font-style: italic;
           z-index: 2;
@@ -539,7 +555,7 @@
           }
         }
       }
-      img {
+      video {
         width: 90%;
         height: 55rem;
         object-fit: cover;
@@ -598,7 +614,7 @@
         h6 {
           font-size: 3.75rem;
           color: #000000;
-          font-weight: 600;
+          font-weight: 500;
           font-family: Alpina;
           font-style: normal;
           span {
@@ -648,8 +664,15 @@
             background-color: #000000;
             border-radius: 1000px;
             padding: 2rem 0;
-            border: unset;
+            border: 1px solid transparent;
             width: 40%;
+            cursor: pointer;
+          }
+          button:hover {
+            border: 1px solid #000000;
+            background-color: #f7f7f7;
+            color: #000000;
+            transition: 0.5s;
           }
         }
       }
@@ -837,7 +860,7 @@
     font-size: 4.5rem;
   }
   .box {
-    padding: 0 2rem;
+    padding: 0 2.5rem;
   }
   .appmainbox header .headerbox {
     padding: 2rem;
@@ -865,7 +888,7 @@
     top: -5rem;
   }
   .appmainbox .marketplacebox .marketplaceleft .marketplaceheading h5 {
-    font-size: 4.5rem;
+    font-size: 4.25rem;
   }
   .appmainbox .marketplacebox .marketplaceleft .marketplaceheading {
     margin: 5rem 0 0 4rem;
@@ -874,7 +897,7 @@
     margin: 7rem 0 0 4rem;
   }
   .appmainbox .roadmapsection .marketplaceleft .marketplaceheading h5 {
-    font-size: 4.5rem;
+    font-size: 4.25rem;
   }
   .appmainbox .metagalleriesbox .metagalleriestext {
     margin: 7rem 0 0 0rem;
@@ -883,7 +906,10 @@
     margin: 2rem 0 0rem 4rem;
   }
   .appmainbox .metagalleriesbox .metagalleriestext .marketplaceheading h5 {
-    font-size: 4.5rem;
+    font-size: 4.25rem;
+    br {
+      display: none;
+    }
   }
   .appmainbox .roadmapsection .marketplaceright img {
     height: 30rem;
@@ -942,5 +968,33 @@
     .footerleft {
       margin: 3rem 0 0 0;
     }
+  }
+  .appmainbox .herosection .heroinputbtn button {
+    font-size: 1.6rem;
+  }
+  .appmainbox .marketplacebox .marketplaceleft .marketplaceheading h6 {
+    top: -4.5rem;
+    font-size: 8rem;
+  }
+  .appmainbox .roadmapsection .marketplaceleft .marketplaceheading h6 {
+    top: -4.5rem;
+    font-size: 8rem;
+  }
+  .appmainbox .metagalleriesbox .metagalleriestext .marketplaceheading h6 {
+    top: -4.5rem;
+    font-size: 8rem;
+  }
+  .appmainbox .futuresection .futuresectionleft .marketplaceheading h6 {
+    top: -4.5rem;
+    font-size: 8rem;
+  }
+  .appmainbox .futuresection .futuresectionleft .marketplaceheading h5 {
+    font-size: 4.25rem;
+  }
+  .appmainbox .futuresection .futuresectionright .joinbox .heroinputbtn button {
+    font-size: 1.6rem;
+  }
+  .appmainbox .futuresection .futuresectionleft .createdwantedbox h6 {
+    font-size: 3.5rem;
   }
 }

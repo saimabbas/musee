@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Square+Peg&display=swap");
 @font-face {
   font-family: Alpina;
-  src: url(../assets/fonts/GT-Alpina.ttf) format("truetype");
+  src: url(../assets/fonts/GT-Alpina.ttf) format("opentype");
   font-display: block;
 }
 @font-face {
@@ -77,6 +77,15 @@
   flex-direction: column;
   margin: 4rem auto;
 }
+.appmainbox .herosection p {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #666666;
+  font-family: "Inter", sans-serif;
+  width: 100%;
+  text-align: center;
+  margin: 0 0 2rem 0;
+}
 .appmainbox .herosection h6 {
   font-size: 8.5rem;
   font-weight: 500;
@@ -147,8 +156,15 @@
   background-color: #000000;
   border-radius: 1000px;
   padding: 2rem 0;
-  border: unset;
+  border: 1px solid transparent;
   width: 40%;
+  cursor: pointer;
+}
+.appmainbox .herosection .heroinputbtn button:hover {
+  border: 1px solid #000000;
+  background-color: #f7f7f7;
+  color: #000000;
+  transition: 0.5s;
 }
 .appmainbox .marketplacebox {
   display: flex;
@@ -174,7 +190,7 @@
   left: -5rem;
   font-size: 10rem;
   color: #f0f0f0;
-  font-weight: 500;
+  font-weight: 200;
   font-family: Alpina;
   font-style: italic;
   z-index: -2;
@@ -182,7 +198,7 @@
 .appmainbox .marketplacebox .marketplaceleft .marketplaceheading h5 {
   font-size: 5rem;
   color: #000000;
-  font-weight: 600;
+  font-weight: 500;
   font-family: Alpina;
   font-style: italic;
   z-index: 2;
@@ -240,7 +256,7 @@
 .appmainbox .marketplacebox .marketplaceleft .marketleftbottom .marketbottomtext h5 {
   font-size: 2.75rem;
   color: #000000;
-  font-weight: 600;
+  font-weight: 500;
   font-family: Alpina;
   font-style: italic;
   margin: 0 0 1.75rem 0;
@@ -268,7 +284,7 @@
   flex-direction: column;
   width: 48%;
 }
-.appmainbox .marketplacebox .marketplaceright img {
+.appmainbox .marketplacebox .marketplaceright video {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -278,7 +294,7 @@
   margin: 2rem 0 0 2rem;
   font-size: 2.75rem;
   color: #000000;
-  font-weight: 600;
+  font-weight: 500;
   font-family: Alpina;
   font-style: italic;
 }
@@ -318,7 +334,7 @@
   left: -5rem;
   font-size: 10rem;
   color: #f0f0f0;
-  font-weight: 500;
+  font-weight: 200;
   font-family: Alpina;
   font-style: italic;
   z-index: -2;
@@ -326,7 +342,7 @@
 .appmainbox .roadmapsection .marketplaceleft .marketplaceheading h5 {
   font-size: 5rem;
   color: #000000;
-  font-weight: 600;
+  font-weight: 500;
   font-family: Alpina;
   font-style: italic;
   z-index: 2;
@@ -384,7 +400,7 @@
 .appmainbox .roadmapsection .marketplaceleft .marketleftbottom .marketbottomtext h5 {
   font-size: 2.75rem;
   color: #000000;
-  font-weight: 600;
+  font-weight: 500;
   font-family: Alpina;
   font-style: italic;
   margin: 0 0 1.75rem 0;
@@ -415,7 +431,7 @@
   left: -5rem;
   font-size: 10rem;
   color: #f0f0f0;
-  font-weight: 500;
+  font-weight: 200;
   font-family: Alpina;
   font-style: italic;
   z-index: -2;
@@ -423,7 +439,7 @@
 .appmainbox .metagalleriesbox .metagalleriestext .marketplaceheading h5 {
   font-size: 5rem;
   color: #000000;
-  font-weight: 600;
+  font-weight: 500;
   font-family: Alpina;
   font-style: italic;
   z-index: 2;
@@ -500,7 +516,7 @@
   left: -5rem;
   font-size: 10rem;
   color: #f0f0f0;
-  font-weight: 500;
+  font-weight: 200;
   font-family: Alpina;
   font-style: italic;
   z-index: -2;
@@ -508,7 +524,7 @@
 .appmainbox .futuresection .futuresectionleft .marketplaceheading h5 {
   font-size: 5rem;
   color: #000000;
-  font-weight: 600;
+  font-weight: 500;
   font-family: Alpina;
   font-style: italic;
   z-index: 2;
@@ -549,7 +565,7 @@
   font-weight: 400;
   margin: 0rem 0 0 1.5rem;
 }
-.appmainbox .futuresection .futuresectionleft img {
+.appmainbox .futuresection .futuresectionleft video {
   width: 90%;
   height: 55rem;
   -o-object-fit: cover;
@@ -611,7 +627,7 @@
 .appmainbox .futuresection .futuresectionright .joinbox h6 {
   font-size: 3.75rem;
   color: #000000;
-  font-weight: 600;
+  font-weight: 500;
   font-family: Alpina;
   font-style: normal;
 }
@@ -674,8 +690,15 @@
   background-color: #000000;
   border-radius: 1000px;
   padding: 2rem 0;
-  border: unset;
+  border: 1px solid transparent;
   width: 40%;
+  cursor: pointer;
+}
+.appmainbox .futuresection .futuresectionright .joinbox .heroinputbtn button:hover {
+  border: 1px solid #000000;
+  background-color: #f7f7f7;
+  color: #000000;
+  transition: 0.5s;
 }
 .appmainbox .futuresection .futuresectionright .frlastimgbox {
   display: flex;
@@ -859,7 +882,7 @@
   }
 
   .box {
-    padding: 0 2rem;
+    padding: 0 2.5rem;
   }
 
   .appmainbox header .headerbox {
@@ -888,7 +911,7 @@
   }
 
   .appmainbox .marketplacebox .marketplaceleft .marketplaceheading h5 {
-    font-size: 4.5rem;
+    font-size: 4.25rem;
   }
 
   .appmainbox .marketplacebox .marketplaceleft .marketplaceheading {
@@ -900,7 +923,7 @@
   }
 
   .appmainbox .roadmapsection .marketplaceleft .marketplaceheading h5 {
-    font-size: 4.5rem;
+    font-size: 4.25rem;
   }
 
   .appmainbox .metagalleriesbox .metagalleriestext {
@@ -912,7 +935,10 @@
   }
 
   .appmainbox .metagalleriesbox .metagalleriestext .marketplaceheading h5 {
-    font-size: 4.5rem;
+    font-size: 4.25rem;
+  }
+  .appmainbox .metagalleriesbox .metagalleriestext .marketplaceheading h5 br {
+    display: none;
   }
 
   .appmainbox .roadmapsection .marketplaceright img {
@@ -988,5 +1014,41 @@
   }
   .appmainbox footer .footerbox .footerleft {
     margin: 3rem 0 0 0;
+  }
+
+  .appmainbox .herosection .heroinputbtn button {
+    font-size: 1.6rem;
+  }
+
+  .appmainbox .marketplacebox .marketplaceleft .marketplaceheading h6 {
+    top: -4.5rem;
+    font-size: 8rem;
+  }
+
+  .appmainbox .roadmapsection .marketplaceleft .marketplaceheading h6 {
+    top: -4.5rem;
+    font-size: 8rem;
+  }
+
+  .appmainbox .metagalleriesbox .metagalleriestext .marketplaceheading h6 {
+    top: -4.5rem;
+    font-size: 8rem;
+  }
+
+  .appmainbox .futuresection .futuresectionleft .marketplaceheading h6 {
+    top: -4.5rem;
+    font-size: 8rem;
+  }
+
+  .appmainbox .futuresection .futuresectionleft .marketplaceheading h5 {
+    font-size: 4.25rem;
+  }
+
+  .appmainbox .futuresection .futuresectionright .joinbox .heroinputbtn button {
+    font-size: 1.6rem;
+  }
+
+  .appmainbox .futuresection .futuresectionleft .createdwantedbox h6 {
+    font-size: 3.5rem;
   }
 }/*# sourceMappingURL=style.css.map */

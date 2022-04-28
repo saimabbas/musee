@@ -1,11 +1,11 @@
 import React from "react";
 import Logo from "./assets/img/Logo.png";
-import Marketplace from "./assets/img/marketplaceimg.png";
+import Video1 from "./assets/video/Video1.mp4";
+import Video2 from "./assets/video/Video2.mp4";
 import Tag from "./assets/img/tag.png";
 import Roadmap from "./assets/img/roadmap.png";
 import Gallery1 from "./assets/img/gallery1.png";
 import Gallery2 from "./assets/img/gallery2.png";
-import FutureImg from "./assets/img/futureimg.png";
 import FutureImg2 from "./assets/img/futureimg2.png";
 import FutureImg3 from "./assets/img/futureimg3.png";
 import FutureImg4 from "./assets/img/futureimg4.png";
@@ -19,11 +19,11 @@ const Home = () => {
       <header>
         <div className="headerbox">
           <div className="headerleft">
-            <img src={Logo} alt="" />
+            <img src={Logo} alt="" loading="lazy" />
           </div>
           <div className="headerright">
-            <a href="#">Medium</a>
-            <a href="#">Twitter</a>
+            <a href="https://musee.medium.com/">Medium</a>
+            <a href="https://www.twitter.com/musee_nft">Twitter</a>
           </div>
         </div>
       </header>
@@ -31,6 +31,7 @@ const Home = () => {
       {/* HERO SECTION  */}
       <div className="box">
         <div className="herosection">
+          <p>Coming Summer 2022</p>
           <h6>
             Introducing<span> Musée,</span> <br />
             The
@@ -99,12 +100,15 @@ const Home = () => {
                 </div>
               </div>
               <div className="marketbottomimg">
-                <img src={Tag} alt="" />
+                <img src={Tag} alt="" loading="lazy" />
               </div>
             </div>
           </div>
           <div className="marketplaceright">
-            <img src={Marketplace} alt="" />
+            {/* <video controls autoplay>
+              <source src={Video1} type="video/mp4">
+           </video> */}
+            <video controls autoplay src={Video1} alt="" />
             <h6>
               We re-invest in art; promoting crerators and growing the Musée
               collection
@@ -117,7 +121,7 @@ const Home = () => {
       <div className="box">
         <div className="roadmapsection">
           <div className="marketplaceright">
-            <img src={Roadmap} alt="" />
+            <img src={Roadmap} alt="" loading="lazy" />
           </div>
           <div className="marketplaceleft">
             <div className="marketplaceheading">
@@ -158,6 +162,10 @@ const Home = () => {
                 <MdCircle />
                 <h6>Exclusive airdrops.</h6>
               </div>
+              <div className="mainpoint">
+                <MdCircle />
+                <h6>Shared ownership of the Musée collection.</h6>
+              </div>
             </div>
             <div className="marketleftbottom">
               <div className="marketbottomtext">
@@ -192,7 +200,9 @@ const Home = () => {
           <div className="metagalleriestext">
             <div className="marketplaceheading">
               <h6>03</h6>
-              <h5>Meta-Galleries.</h5>
+              <h5>
+                Meta-Galleries, your <br /> art on the otherside.
+              </h5>
             </div>
             <p>
               Create and share your own Meta-Gallery - our first step towards
@@ -201,21 +211,21 @@ const Home = () => {
             <div className="pointsbox">
               <div className="mainpoint">
                 <MdCircle />
-                <h6>Partners</h6>
+                <h6>Free for everyone.</h6>
               </div>
               <div className="mainpoint">
                 <MdCircle />
-                <h6>Artists</h6>
+                <h6>Premium custom galleries available.</h6>
               </div>
               <div className="mainpoint">
                 <MdCircle />
-                <h6>Collector’s exclusive builds</h6>
+                <h6>Drops (NFT) unlocking limited rooms.</h6>
               </div>
             </div>
           </div>
           <div className="metagalleriesimg">
-            <img src={Gallery1} alt="" />
-            <img src={Gallery2} alt="" />
+            <img src={Gallery1} alt="" loading="lazy" />
+            <img src={Gallery2} alt="" loading="lazy" />
           </div>
         </div>
       </div>
@@ -249,14 +259,14 @@ const Home = () => {
                 <h6>Musée DAO</h6>
               </div>
             </div>
-            <img src={FutureImg} alt="" />
+            <video controls autoplay src={Video2} alt="" />
             <div className="createdwantedbox">
               <h6>Creators wanted!</h6>
               <button>Apply here</button>
             </div>
           </div>
           <div className="futuresectionright">
-            <img src={FutureImg2} alt="" />
+            <img src={FutureImg2} alt="" loading="lazy" />
             <div className="joinbox">
               <h6>
                 <span>Join the waitlist </span> <br />& get early access.
@@ -267,11 +277,16 @@ const Home = () => {
               </div>
             </div>
             <div className="frlastimgbox">
-              <img src={FutureImg3} className="frleft" alt="" />
-              <img src={FutureImg4} className="frright" alt="" />
+              <img src={FutureImg3} className="frleft" alt="" loading="lazy" />
+              <img src={FutureImg4} className="frright" alt="" loading="lazy" />
             </div>
           </div>
-          <img src={FutureImg5} className="futuresideimg" alt="" />
+          <img
+            src={FutureImg5}
+            className="futuresideimg"
+            alt=""
+            loading="lazy"
+          />
         </div>
       </div>
 
@@ -283,8 +298,8 @@ const Home = () => {
               <p>© 2022 Inverted Studios Inc. All rights reserved.</p>
             </div>
             <div className="footerleft">
-              <a href="#">Medium</a>
-              <a href="#">Twitter</a>
+              <a href="https://musee.medium.com/">Medium</a>
+              <a href="https://www.twitter.com/musee_nft">Twitter</a>
             </div>
           </div>
         </div>
