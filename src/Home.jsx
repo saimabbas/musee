@@ -108,7 +108,7 @@ const Home = () => {
             {/* <video controls autoplay>
               <source src={Video1} type="video/mp4">
            </video> */}
-            <video controls autoplay src={Video1} alt="" />
+            <video loop muted autoPlay src={Video1} alt="Video1" />
             <h6>
               We re-invest in art; promoting crerators and growing the Musée
               collection
@@ -259,7 +259,7 @@ const Home = () => {
                 <h6>Musée DAO</h6>
               </div>
             </div>
-            <video controls autoplay src={Video2} alt="" />
+            <video loop muted autoPlay src={Video2} alt="Video2" />
             <div className="createdwantedbox">
               <h6>Creators wanted!</h6>
               <button>Apply here</button>

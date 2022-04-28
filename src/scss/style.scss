@@ -53,7 +53,6 @@
         align-items: center;
         img {
           width: 6rem;
-          height: 6rem;
           object-fit: contain;
         }
       }
@@ -866,13 +865,10 @@
     padding: 2rem;
   }
   .appmainbox .herosection h6 {
-    font-size: 4.5rem;
+    font-size: 4rem;
     br {
       display: none;
     }
-  }
-  .appmainbox .herosection .heroinputbtn {
-    width: 100%;
   }
   .appmainbox
     .marketplacebox
@@ -881,14 +877,14 @@
     .marketbottomimg
     img {
     width: 100%;
-    height: 14.5rem;
+    height: 13rem;
     object-fit: cover;
     position: absolute;
     right: 1rem;
     top: -5rem;
   }
   .appmainbox .marketplacebox .marketplaceleft .marketplaceheading h5 {
-    font-size: 4.25rem;
+    font-size: 3.5rem;
   }
   .appmainbox .marketplacebox .marketplaceleft .marketplaceheading {
     margin: 5rem 0 0 4rem;
@@ -897,7 +893,7 @@
     margin: 7rem 0 0 4rem;
   }
   .appmainbox .roadmapsection .marketplaceleft .marketplaceheading h5 {
-    font-size: 4.25rem;
+    font-size: 3.5rem;
   }
   .appmainbox .metagalleriesbox .metagalleriestext {
     margin: 7rem 0 0 0rem;
@@ -906,7 +902,7 @@
     margin: 2rem 0 0rem 4rem;
   }
   .appmainbox .metagalleriesbox .metagalleriestext .marketplaceheading h5 {
-    font-size: 4.25rem;
+    font-size: 3.5rem;
     br {
       display: none;
     }
@@ -923,14 +919,15 @@
     margin: 0 0 2rem 0;
   }
   .appmainbox .futuresection {
-    margin: 4rem 0;
+    margin: 2rem 0;
   }
   .appmainbox .futuresection .futuresectionleft .marketplaceheading {
     margin: 5rem 0 0 4rem;
   }
-  .appmainbox .futuresection .futuresectionleft img {
+  .appmainbox .futuresection .futuresectionleft video {
     width: 100%;
-    height: 30rem;
+    height: 40rem;
+    margin: 2rem 0 4rem 0;
   }
   .appmainbox .futuresection .futuresectionleft .createdwantedbox {
     width: 100%;
@@ -952,6 +949,8 @@
   }
   .appmainbox .futuresection .futuresectionright .joinbox h6 {
     text-align: center;
+    font-size: 3rem;
+    width: 100%;
   }
   .appmainbox .futuresection .futuresectionright .frlastimgbox img.frleft {
     height: 30rem;
@@ -971,6 +970,22 @@
   }
   .appmainbox .herosection .heroinputbtn button {
     font-size: 1.6rem;
+    margin: 1.5rem 0 0 0;
+    width: 100%;
+  }
+  .appmainbox .herosection .heroinputbtn {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: transparent;
+  }
+  .appmainbox .herosection .heroinputbtn input {
+    width: 100%;
+    background-color: #f7f7f7;
+    padding: 2rem 3rem;
+    border-radius: 10000px;
   }
   .appmainbox .marketplacebox .marketplaceleft .marketplaceheading h6 {
     top: -4.5rem;
@@ -989,12 +1004,35 @@
     font-size: 8rem;
   }
   .appmainbox .futuresection .futuresectionleft .marketplaceheading h5 {
-    font-size: 4.25rem;
+    font-size: 3.5rem;
   }
   .appmainbox .futuresection .futuresectionright .joinbox .heroinputbtn button {
     font-size: 1.6rem;
   }
+  .appmainbox .futuresection .futuresectionright .joinbox .heroinputbtn button {
+    font-size: 1.6rem;
+    margin: 1.5rem 0 0 0;
+    width: 100%;
+  }
+  .appmainbox .futuresection .futuresectionright .joinbox .heroinputbtn {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: transparent;
+  }
+  .appmainbox .futuresection .futuresectionright .joinbox .heroinputbtn input {
+    width: 100%;
+    background-color: #f7f7f7;
+    padding: 2rem 3rem;
+    border-radius: 10000px;
+  }
   .appmainbox .futuresection .futuresectionleft .createdwantedbox h6 {
     font-size: 3.5rem;
+  }
+  .appmainbox .marketplacebox .marketplaceright h6 {
+    font-size: 2.25rem;
+    margin: 2rem 0 0 0;
   }
 }
