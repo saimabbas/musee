@@ -52,7 +52,7 @@
         justify-content: center;
         align-items: center;
         img {
-          width: 6rem;
+          width: 8rem;
           object-fit: contain;
         }
       }
@@ -64,7 +64,7 @@
           text-decoration: none;
           font-size: 1.8rem;
           color: #000000;
-          font-weight: 500;
+          font-weight: 600;
           margin: 0 0 0 2.5rem;
           font-family: "Inconsolata", monospace;
         }
@@ -77,7 +77,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 4rem auto;
+    margin: 6rem auto;
     p {
       font-size: 1.8rem;
       font-weight: 600;
@@ -89,7 +89,7 @@
     }
     h6 {
       font-size: 8.5rem;
-      font-weight: 500;
+      font-weight: 600;
       color: #000000;
       font-family: "Inter", sans-serif;
       text-transform: uppercase;
@@ -193,10 +193,10 @@
         }
       }
       p {
-        font-size: 1.45rem;
+        font-size: 1.75rem;
         font-weight: 400;
         font-family: "Inter", sans-serif;
-        color: #000000;
+        color: #333333;
         margin: 1.75rem 0;
         line-height: 22px;
       }
@@ -214,15 +214,15 @@
           width: 100%;
           margin: 0 0 1.75rem 0;
           svg {
-            min-width: 2rem;
-            min-height: 2rem;
-            max-width: 2rem;
-            max-height: 2rem;
+            min-width: 2.25rem;
+            min-height: 2.25rem;
+            max-width: 2.25rem;
+            max-height: 2.25rem;
             color: #000000;
           }
           h6 {
-            font-size: 1.45rem;
-            color: #000000;
+            font-size: 1.65rem;
+            color: #666666;
             font-weight: 400;
             margin: 0rem 0 0 1.5rem;
           }
@@ -279,7 +279,7 @@
       }
       h6 {
         margin: 2rem 0 0 2rem;
-        font-size: 2.75rem;
+        font-size: 2.95rem;
         color: #000000;
         font-weight: 500;
         font-family: Alpina;
@@ -301,7 +301,7 @@
       width: 48%;
       img {
         width: 90%;
-        height: 55rem;
+        height: 58rem;
         object-fit: cover;
       }
     }
@@ -335,10 +335,10 @@
         }
       }
       p {
-        font-size: 1.45rem;
+        font-size: 1.75rem;
         font-weight: 400;
         font-family: "Inter", sans-serif;
-        color: #000000;
+        color: #333333;
         margin: 1.75rem 0;
         line-height: 22px;
       }
@@ -356,15 +356,15 @@
           width: 100%;
           margin: 0 0 1.75rem 0;
           svg {
-            min-width: 2rem;
-            min-height: 2rem;
-            max-width: 2rem;
-            max-height: 2rem;
+            min-width: 2.25rem;
+            min-height: 2.25rem;
+            max-width: 2.25rem;
+            max-height: 2.25rem;
             color: #000000;
           }
           h6 {
-            font-size: 1.45rem;
-            color: #000000;
+            font-size: 1.65rem;
+            color: #666666;
             font-weight: 400;
             margin: 0rem 0 0 1.5rem;
           }
@@ -433,10 +433,10 @@
         }
       }
       p {
-        font-size: 1.45rem;
+        font-size: 1.75rem;
         font-weight: 400;
         font-family: "Inter", sans-serif;
-        color: #000000;
+        color: #333333;
         margin: 1.75rem 0;
         line-height: 22px;
         width: 40%;
@@ -455,15 +455,15 @@
           width: 100%;
           margin: 0 0 1.75rem 0;
           svg {
-            min-width: 2rem;
-            min-height: 2rem;
-            max-width: 2rem;
-            max-height: 2rem;
+            min-width: 2.25rem;
+            min-height: 2.25rem;
+            max-width: 2.25rem;
+            max-height: 2.25rem;
             color: #000000;
           }
           h6 {
-            font-size: 1.45rem;
-            color: #000000;
+            font-size: 1.65rem;
+            color: #666666;
             font-weight: 400;
             margin: 0rem 0 0 1.5rem;
           }
@@ -519,10 +519,10 @@
         }
       }
       p {
-        font-size: 1.45rem;
+        font-size: 1.75rem;
         font-weight: 400;
         font-family: "Inter", sans-serif;
-        color: #000000;
+        color: #333333;
         margin: 1.75rem 0;
         line-height: 22px;
       }
@@ -540,15 +540,15 @@
           width: 100%;
           margin: 0 0 1.75rem 0;
           svg {
-            min-width: 2rem;
-            min-height: 2rem;
-            max-width: 2rem;
-            max-height: 2rem;
+            min-width: 2.25rem;
+            min-height: 2.25rem;
+            max-width: 2.25rem;
+            max-height: 2.25rem;
             color: #000000;
           }
           h6 {
-            font-size: 1.45rem;
-            color: #000000;
+            font-size: 1.65rem;
+            color: #666666;
             font-weight: 400;
             margin: 0rem 0 0 1.5rem;
           }
@@ -611,14 +611,15 @@
         width: 90%;
         margin: 6rem 0 0 0;
         h6 {
-          font-size: 3.75rem;
+          font-size: 3.95rem;
           color: #000000;
-          font-weight: 500;
-          font-family: Alpina;
+          font-weight: 600;
+          font-family: "Inconsolata", monospace;
           font-style: normal;
           span {
-            font-family: "Inconsolata", monospace;
+            font-family: Alpina;
             font-style: italic;
+            font-weight: 500;
           }
         }
         .heroinputbtn {
@@ -826,8 +827,9 @@
         margin: 0 0 5rem 0;
       }
       .createdwantedbox {
-        width: 70%;
+        width: 100%;
         margin: 0 auto;
+        padding: 2.5rem 2.5rem 3rem 2.5rem;
       }
     }
     .futuresectionright {
@@ -851,6 +853,10 @@
       right: -7%;
       bottom: 22%;
     }
+  }
+  .appmainbox .futuresection .futuresectionleft video {
+    width: 100%;
+    margin: 7rem 0 5rem 0;
   }
 }
 
