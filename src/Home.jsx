@@ -33,9 +33,9 @@ const Home = () => {
         <div className="herosection">
           <p>Coming Summer 2022</p>
           <h6>
-            Introducing<span> Musée,</span> <br />
-            The
-            <span> hub </span> of <span>web3 art.</span>
+            Introducing<span> Musée,</span>
+            <br />
+            The<span> hub </span> of<span>web3 art.</span>
           </h6>
           <div className="heroinputbtn">
             <input type="text" placeholder="Enter email address..." />
@@ -231,63 +231,71 @@ const Home = () => {
       </div>
 
       {/* FUTURE SECTION  */}
-      <div className="box">
-        <div className="futuresection">
-          <div className="futuresectionleft">
-            <div className="marketplaceheading">
-              <h6>04</h6>
-              <h5>The future of Musée.</h5>
-            </div>
-            <p>
-              Nulla purus dui bibendum cursus pulvinar amet nulla. Nunc gravida
-              in ut fermentum tristique molestie. Risus venenatis, ullamcorper
-              orci, sit ultrices neque.
-            </p>
-            <div className="pointsbox">
-              <div className="mainpoint">
-                <MdCircle />
-                <h6>Musée Art City: The hub of art in the metaverse.</h6>
+      <div className="fsimgbox">
+        <div className="box ">
+          <div className="futuresection">
+            <div className="futuresectionleft">
+              <div className="marketplaceheading">
+                <h6>04</h6>
+                <h5>The future of Musée.</h5>
               </div>
-              <div className="mainpoint">
-                <MdCircle />
+              <p>
+                Nulla purus dui bibendum cursus pulvinar amet nulla. Nunc
+                gravida in ut fermentum tristique molestie. Risus venenatis,
+                ullamcorper orci, sit ultrices neque.
+              </p>
+              <div className="pointsbox">
+                <div className="mainpoint">
+                  <MdCircle />
+                  <h6>Musée Art City: The hub of art in the metaverse.</h6>
+                </div>
+                <div className="mainpoint">
+                  <MdCircle />
+                  <h6>
+                    $MUSEE Rewards: Distributed to land owners and platform
+                    users.
+                  </h6>
+                </div>
+                <div className="mainpoint">
+                  <MdCircle />
+                  <h6>Musée DAO</h6>
+                </div>
+              </div>
+              <video loop muted autoPlay src={Video2} alt="Video2" />
+              <div className="createdwantedbox">
+                <h6>Creators wanted!</h6>
+                <button>Apply here</button>
+              </div>
+            </div>
+            <div className="futuresectionright">
+              <img src={FutureImg2} alt="" loading="lazy" />
+              <div className="joinbox">
                 <h6>
-                  $MUSEE Rewards: Distributed to land owners and platform users.
+                  <span>Join the waitlist </span> <br />& get early access.
                 </h6>
+                <div className="heroinputbtn">
+                  <input type="text" placeholder="Enter email address..." />
+                  <button>Get notified</button>
+                </div>
               </div>
-              <div className="mainpoint">
-                <MdCircle />
-                <h6>Musée DAO</h6>
+              <div className="frlastimgbox">
+                <img
+                  src={FutureImg3}
+                  className="frleft"
+                  alt=""
+                  loading="lazy"
+                />
+                <img
+                  src={FutureImg4}
+                  className="frright"
+                  alt=""
+                  loading="lazy"
+                />
               </div>
-            </div>
-            <video loop muted autoPlay src={Video2} alt="Video2" />
-            <div className="createdwantedbox">
-              <h6>Creators wanted!</h6>
-              <button>Apply here</button>
             </div>
           </div>
-          <div className="futuresectionright">
-            <img src={FutureImg2} alt="" loading="lazy" />
-            <div className="joinbox">
-              <h6>
-                <span>Join the waitlist </span> <br />& get early access.
-              </h6>
-              <div className="heroinputbtn">
-                <input type="text" placeholder="Enter email address..." />
-                <button>Get notified</button>
-              </div>
-            </div>
-            <div className="frlastimgbox">
-              <img src={FutureImg3} className="frleft" alt="" loading="lazy" />
-              <img src={FutureImg4} className="frright" alt="" loading="lazy" />
-            </div>
-          </div>
-          <img
-            src={FutureImg5}
-            className="futuresideimg"
-            alt=""
-            loading="lazy"
-          />
         </div>
+        <img src={FutureImg5} className="futuresideimg" alt="" loading="lazy" />
       </div>
 
       {/* FOOTER SECTION  */}

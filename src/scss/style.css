@@ -25,7 +25,7 @@
 .box {
   width: 100%;
   height: 100%;
-  max-width: 1300px;
+  max-width: 1500px;
   padding: 0 5rem;
   margin: 0 auto;
 }
@@ -44,7 +44,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 5rem;
+  padding: 3rem 4rem;
 }
 .appmainbox header .headerbox .headerleft {
   display: flex;
@@ -63,18 +63,19 @@
 }
 .appmainbox header .headerbox .headerright a {
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   color: #000000;
-  font-weight: 600;
+  font-weight: 700;
   margin: 0 0 0 2.5rem;
   font-family: "Inconsolata", monospace;
+  text-transform: uppercase;
 }
 .appmainbox .herosection {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 6rem auto;
+  margin: 4rem auto 6rem auto;
 }
 .appmainbox .herosection p {
   font-size: 1.8rem;
@@ -89,7 +90,7 @@
   font-size: 8.5rem;
   font-weight: 600;
   color: #000000;
-  font-family: "Inter", sans-serif;
+  font-family: "Inconsolata", monospace;
   text-transform: uppercase;
   width: 100%;
   text-align: center;
@@ -99,12 +100,13 @@
   font-style: italic;
   font-weight: 500;
   text-transform: none;
+  font-size: 8.5rem;
 }
 .appmainbox .herosection .heroinputbtn {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 40%;
+  width: 42%;
   margin: 2rem 0 0 0;
   border-radius: 1000px;
   background-color: #f7f7f7;
@@ -156,7 +158,7 @@
   border-radius: 1000px;
   padding: 2rem 0;
   border: 1px solid transparent;
-  width: 40%;
+  width: 35%;
   cursor: pointer;
 }
 .appmainbox .herosection .heroinputbtn button:hover {
@@ -170,14 +172,14 @@
   justify-content: space-between;
   align-items: flex-start;
   width: 90%;
-  margin: 2rem auto 1rem auto;
+  margin: 2rem auto 0rem auto;
 }
 .appmainbox .marketplacebox .marketplaceleft {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  width: 45%;
+  width: 43%;
 }
 .appmainbox .marketplacebox .marketplaceleft .marketplaceheading {
   margin: 5rem 0 0 0;
@@ -186,7 +188,7 @@
 .appmainbox .marketplacebox .marketplaceleft .marketplaceheading h6 {
   position: absolute;
   top: -6.5rem;
-  left: -5rem;
+  left: -6rem;
   font-size: 10rem;
   color: #f0f0f0;
   font-weight: 200;
@@ -204,11 +206,11 @@
 }
 .appmainbox .marketplacebox .marketplaceleft p {
   font-size: 1.75rem;
-  font-weight: 400;
+  font-weight: 500;
   font-family: "Inter", sans-serif;
   color: #333333;
   margin: 1.75rem 0;
-  line-height: 22px;
+  line-height: 26px;
 }
 .appmainbox .marketplacebox .marketplaceleft .pointsbox {
   margin: 0 1rem 1rem 1.75rem;
@@ -223,20 +225,21 @@
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-  margin: 0 0 1.75rem 0;
+  margin: 0 0 2.25rem 0;
 }
 .appmainbox .marketplacebox .marketplaceleft .pointsbox .mainpoint svg {
-  min-width: 2.25rem;
-  min-height: 2.25rem;
-  max-width: 2.25rem;
-  max-height: 2.25rem;
+  min-width: 2.5rem;
+  min-height: 2.5rem;
+  max-width: 2.5rem;
+  max-height: 2.5rem;
   color: #000000;
 }
 .appmainbox .marketplacebox .marketplaceleft .pointsbox .mainpoint h6 {
   font-size: 1.65rem;
   color: #666666;
-  font-weight: 400;
+  font-weight: 500;
   margin: 0rem 0 0 1.5rem;
+  line-height: 26px;
 }
 .appmainbox .marketplacebox .marketplaceleft .marketleftbottom {
   display: flex;
@@ -281,17 +284,17 @@
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  width: 48%;
+  width: 52%;
 }
 .appmainbox .marketplacebox .marketplaceright video {
   width: 100%;
-  height: 100%;
+  height: 40rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .appmainbox .marketplacebox .marketplaceright h6 {
   margin: 2rem 0 0 2rem;
-  font-size: 2.95rem;
+  font-size: 3.25rem;
   color: #000000;
   font-weight: 500;
   font-family: Alpina;
@@ -330,7 +333,7 @@
 .appmainbox .roadmapsection .marketplaceleft .marketplaceheading h6 {
   position: absolute;
   top: -6.5rem;
-  left: -5rem;
+  left: -7rem;
   font-size: 10rem;
   color: #f0f0f0;
   font-weight: 200;
@@ -348,11 +351,11 @@
 }
 .appmainbox .roadmapsection .marketplaceleft p {
   font-size: 1.75rem;
-  font-weight: 400;
+  font-weight: 500;
   font-family: "Inter", sans-serif;
   color: #333333;
   margin: 1.75rem 0;
-  line-height: 22px;
+  line-height: 26px;
 }
 .appmainbox .roadmapsection .marketplaceleft .pointsbox {
   margin: 0 1rem 1rem 1.75rem;
@@ -370,17 +373,18 @@
   margin: 0 0 1.75rem 0;
 }
 .appmainbox .roadmapsection .marketplaceleft .pointsbox .mainpoint svg {
-  min-width: 2.25rem;
-  min-height: 2.25rem;
-  max-width: 2.25rem;
-  max-height: 2.25rem;
+  min-width: 2.5rem;
+  min-height: 2.5rem;
+  max-width: 2.5rem;
+  max-height: 2.5rem;
   color: #000000;
 }
 .appmainbox .roadmapsection .marketplaceleft .pointsbox .mainpoint h6 {
   font-size: 1.65rem;
   color: #666666;
-  font-weight: 400;
+  font-weight: 500;
   margin: 0rem 0 0 1.5rem;
+  line-height: 26px;
 }
 .appmainbox .roadmapsection .marketplaceleft .marketleftbottom {
   display: flex;
@@ -445,11 +449,11 @@
 }
 .appmainbox .metagalleriesbox .metagalleriestext p {
   font-size: 1.75rem;
-  font-weight: 400;
+  font-weight: 500;
   font-family: "Inter", sans-serif;
   color: #333333;
   margin: 1.75rem 0;
-  line-height: 22px;
+  line-height: 26px;
   width: 40%;
 }
 .appmainbox .metagalleriesbox .metagalleriestext .pointsbox {
@@ -468,17 +472,18 @@
   margin: 0 0 1.75rem 0;
 }
 .appmainbox .metagalleriesbox .metagalleriestext .pointsbox .mainpoint svg {
-  min-width: 2.25rem;
-  min-height: 2.25rem;
-  max-width: 2.25rem;
-  max-height: 2.25rem;
+  min-width: 2.5rem;
+  min-height: 2.5rem;
+  max-width: 2.5rem;
+  max-height: 2.5rem;
   color: #000000;
 }
 .appmainbox .metagalleriesbox .metagalleriestext .pointsbox .mainpoint h6 {
   font-size: 1.65rem;
   color: #666666;
-  font-weight: 400;
+  font-weight: 500;
   margin: 0rem 0 0 1.5rem;
+  line-height: 26px;
 }
 .appmainbox .metagalleriesbox .metagalleriesimg {
   display: flex;
@@ -488,7 +493,18 @@
 }
 .appmainbox .metagalleriesbox .metagalleriesimg img {
   width: 48%;
-  height: 30rem;
+  height: 35rem;
+}
+.appmainbox .fsimgbox {
+  position: relative;
+  width: 100%;
+}
+.appmainbox .fsimgbox img.futuresideimg {
+  position: absolute;
+  bottom: 28%;
+  right: 0%;
+  height: 43rem;
+  width: 20rem;
 }
 .appmainbox .futuresection {
   display: flex;
@@ -496,7 +512,6 @@
   align-items: flex-start;
   width: 90%;
   margin: 6rem auto 1rem auto;
-  position: relative;
 }
 .appmainbox .futuresection .futuresectionleft {
   display: flex;
@@ -530,11 +545,11 @@
 }
 .appmainbox .futuresection .futuresectionleft p {
   font-size: 1.75rem;
-  font-weight: 400;
+  font-weight: 500;
   font-family: "Inter", sans-serif;
   color: #333333;
   margin: 1.75rem 0;
-  line-height: 22px;
+  line-height: 26px;
 }
 .appmainbox .futuresection .futuresectionleft .pointsbox {
   margin: 0 1rem 1rem 1.75rem;
@@ -552,17 +567,18 @@
   margin: 0 0 1.75rem 0;
 }
 .appmainbox .futuresection .futuresectionleft .pointsbox .mainpoint svg {
-  min-width: 2.25rem;
-  min-height: 2.25rem;
-  max-width: 2.25rem;
-  max-height: 2.25rem;
+  min-width: 2.5rem;
+  min-height: 2.5rem;
+  max-width: 2.5rem;
+  max-height: 2.5rem;
   color: #000000;
 }
 .appmainbox .futuresection .futuresectionleft .pointsbox .mainpoint h6 {
   font-size: 1.65rem;
   color: #666666;
-  font-weight: 400;
+  font-weight: 500;
   margin: 0rem 0 0 1.5rem;
+  line-height: 26px;
 }
 .appmainbox .futuresection .futuresectionleft video {
   width: 90%;
@@ -613,15 +629,15 @@
   height: 55rem;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 80%;
+  width: 75%;
 }
 .appmainbox .futuresection .futuresectionright .joinbox {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  width: 90%;
-  margin: 6rem 0 0 0;
+  width: 80%;
+  margin: 7rem 0 0 0;
 }
 .appmainbox .futuresection .futuresectionright .joinbox h6 {
   font-size: 3.95rem;
@@ -691,7 +707,7 @@
   border-radius: 1000px;
   padding: 2rem 0;
   border: 1px solid transparent;
-  width: 40%;
+  width: 35%;
   cursor: pointer;
 }
 .appmainbox .futuresection .futuresectionright .joinbox .heroinputbtn button:hover {
@@ -705,27 +721,20 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin: 12rem 0 0 0;
+  margin: 18rem 0 0 0;
 }
 .appmainbox .futuresection .futuresectionright .frlastimgbox img.frleft {
-  width: 45%;
-  height: 30rem;
+  width: 55%;
+  height: 35rem;
   -o-object-fit: cover;
      object-fit: cover;
   transform: translate(-25%, 0);
 }
 .appmainbox .futuresection .futuresectionright .frlastimgbox img.frright {
   width: 40%;
-  height: 18rem;
+  height: 20rem;
   -o-object-fit: cover;
      object-fit: cover;
-}
-.appmainbox .futuresection img.futuresideimg {
-  position: absolute;
-  bottom: 28%;
-  right: -20%;
-  height: 43rem;
-  width: 20rem;
 }
 .appmainbox footer {
   width: 100%;
@@ -762,6 +771,10 @@
 }
 
 @media screen and (max-width: 1140px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .appmainbox .marketplacebox .marketplaceleft .marketleftbottom .marketbottomimg img {
     height: 15rem;
   }
@@ -774,14 +787,65 @@
   .appmainbox .futuresection .futuresectionright .frlastimgbox img.frleft {
     height: 25rem;
   }
+
+  .appmainbox .metagalleriesbox {
+    width: 100%;
+  }
+
+  .appmainbox .metagalleriesbox .metagalleriestext {
+    margin: 0 0 2rem 4rem;
+  }
+
+  .appmainbox .futuresection .futuresectionright .joinbox h6 {
+    font-size: 3.25rem;
+  }
+
+  .appmainbox .fsimgbox img.futuresideimg {
+    bottom: 35%;
+    height: 35rem;
+    width: 16rem;
+  }
+
+  .appmainbox .futuresection .futuresectionleft .createdwantedbox h6 {
+    font-size: 3.75rem;
+  }
+
+  .appmainbox .futuresection .futuresectionright .joinbox .heroinputbtn button {
+    font-size: 1.6rem;
+    margin: 1.5rem 0 0 0;
+    width: 100%;
+  }
+
+  .appmainbox .futuresection .futuresectionright .joinbox .heroinputbtn {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .appmainbox .futuresection .futuresectionright .joinbox .heroinputbtn input {
+    width: 100%;
+    background-color: #f7f7f7;
+    padding: 2rem 3rem;
+    border-radius: 10000px;
+  }
+
+  .appmainbox .herosection .heroinputbtn {
+    width: 60%;
+  }
 }
 @media screen and (max-width: 850px) {
   .appmainbox .herosection h6 {
     font-size: 6.5rem;
   }
+  .appmainbox .herosection h6 span {
+    font-size: 6.5rem;
+  }
 
   .appmainbox .herosection .heroinputbtn {
-    width: 60%;
+    width: 65%;
   }
 
   .appmainbox .marketplacebox {
@@ -819,7 +883,7 @@
     width: 100%;
   }
   .appmainbox .roadmapsection .marketplaceleft .marketplaceheading {
-    margin: 10rem 0 0 3rem;
+    margin: 10rem 0 0 4rem;
   }
   .appmainbox .roadmapsection .marketplaceleft .marketplaceheading br {
     display: none;
@@ -896,7 +960,10 @@
   }
 
   .appmainbox .herosection h6 {
-    font-size: 4rem;
+    font-size: 5rem;
+  }
+  .appmainbox .herosection h6 span {
+    font-size: 5rem;
   }
   .appmainbox .herosection h6 br {
     display: none;
@@ -921,7 +988,7 @@
   }
 
   .appmainbox .roadmapsection .marketplaceleft .marketplaceheading {
-    margin: 7rem 0 0 4rem;
+    margin: 7rem 0 0 5rem;
   }
 
   .appmainbox .roadmapsection .marketplaceleft .marketplaceheading h5 {
@@ -1100,5 +1167,9 @@
   .appmainbox .marketplacebox .marketplaceright h6 {
     font-size: 2.25rem;
     margin: 2rem 0 0 0;
+  }
+
+  .appmainbox .fsimgbox img.futuresideimg {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
