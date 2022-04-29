@@ -35,7 +35,7 @@ const Home = () => {
           <h6>
             Introducing<span> Musée,</span>
             <br />
-            The<span> hub </span> of<span>web3 art.</span>
+            The<span> hub </span> of<span> web3 art.</span>
           </h6>
           <div className="heroinputbtn">
             <input type="text" placeholder="Enter email address..." />
@@ -105,10 +105,10 @@ const Home = () => {
             </div>
           </div>
           <div className="marketplaceright">
-            {/* <video controls autoplay>
-              <source src={Video1} type="video/mp4">
-           </video> */}
-            <video loop muted autoPlay src={Video1} alt="Video1" />
+            <div className="p-bottom-box">
+              <video loop muted autoPlay src={Video1} alt="Video1" />
+              <p>@MARCEL/A</p>
+            </div>
             <h6>
               We re-invest in art; promoting crerators and growing the Musée
               collection
@@ -121,7 +121,10 @@ const Home = () => {
       <div className="box">
         <div className="roadmapsection">
           <div className="marketplaceright">
-            <img src={Roadmap} alt="" loading="lazy" />
+            <div className="p-bottom-box">
+              <img src={Roadmap} alt="" loading="lazy" />
+              <p>@HyunHur</p>
+            </div>
           </div>
           <div className="marketplaceleft">
             <div className="marketplaceheading">
@@ -261,14 +264,20 @@ const Home = () => {
                   <h6>Musée DAO</h6>
                 </div>
               </div>
-              <video loop muted autoPlay src={Video2} alt="Video2" />
+              <div className="p-bottom-box">
+                <video loop muted autoPlay src={Video2} alt="Video2" />
+                <p>@yossik</p>
+              </div>
               <div className="createdwantedbox">
                 <h6>Creators wanted!</h6>
                 <button>Apply here</button>
               </div>
             </div>
             <div className="futuresectionright">
-              <img src={FutureImg2} alt="" loading="lazy" />
+              <div className="p-bottom-box">
+                <img src={FutureImg2} alt="" loading="lazy" />
+                <p>@Lindale</p>
+              </div>
               <div className="joinbox">
                 <h6>
                   <span>Join the waitlist </span> <br />& get early access.
@@ -279,23 +288,37 @@ const Home = () => {
                 </div>
               </div>
               <div className="frlastimgbox">
-                <img
-                  src={FutureImg3}
-                  className="frleft"
-                  alt=""
-                  loading="lazy"
-                />
-                <img
-                  src={FutureImg4}
-                  className="frright"
-                  alt=""
-                  loading="lazy"
-                />
+                <div className="p-bottom-box-frleft">
+                  <img
+                    src={FutureImg3}
+                    className="frleft"
+                    alt=""
+                    loading="lazy"
+                  />
+                  <p>@Fullzbelly</p>
+                </div>
+                <div className="p-bottom-box-frright">
+                  <img
+                    src={FutureImg4}
+                    className="frright"
+                    alt=""
+                    loading="lazy"
+                  />
+                  <p>@Kilsypix</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <img src={FutureImg5} className="futuresideimg" alt="" loading="lazy" />
+        <div className="p-bottom-box-fsimg">
+          <img
+            src={FutureImg5}
+            className="futuresideimg"
+            alt=""
+            loading="lazy"
+          />
+          <p>@Penn</p>
+        </div>
       </div>
 
       {/* FOOTER SECTION  */}
