@@ -317,7 +317,7 @@
 .appmainbox .roadmapsection {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   width: 90%;
   margin: 0rem auto 1rem auto;
 }
@@ -326,9 +326,10 @@
   justify-content: flex-end;
   align-items: flex-end;
   width: 48%;
+  margin: 14rem 0 0 0;
 }
 .appmainbox .roadmapsection .marketplaceright .p-bottom-box {
-  width: 70%;
+  width: 72%;
   position: relative;
 }
 .appmainbox .roadmapsection .marketplaceright .p-bottom-box img {
@@ -532,7 +533,7 @@
   position: absolute;
   bottom: 33%;
   right: 0%;
-  width: 20rem;
+  width: 18.5rem;
 }
 .appmainbox .fsimgbox .p-bottom-box-fsimg img.futuresideimg {
   width: 100%;
@@ -627,7 +628,7 @@
   width: 90%;
   margin: 7.5rem 0 6rem 0;
   position: relative;
-  height: 45rem;
+  height: 46.5rem;
 }
 .appmainbox .futuresection .futuresectionleft .p-bottom-box video {
   width: 100%;
@@ -684,7 +685,7 @@
   margin: 16rem 0 0 0;
 }
 .appmainbox .futuresection .futuresectionright .p-bottom-box {
-  width: 65%;
+  width: 66%;
   position: relative;
 }
 .appmainbox .futuresection .futuresectionright .p-bottom-box img {

@@ -309,7 +309,7 @@
   .roadmapsection {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     width: 90%;
     margin: 0rem auto 1rem auto;
     .marketplaceright {
@@ -317,8 +317,9 @@
       justify-content: flex-end;
       align-items: flex-end;
       width: 48%;
+      margin: 14rem 0 0 0;
       .p-bottom-box {
-        width: 70%;
+        width: 72%;
         position: relative;
         img {
           width: 100%;
@@ -523,7 +524,7 @@
       position: absolute;
       bottom: 33%;
       right: 0%;
-      width: 20rem;
+      width: 18.5rem;
       img.futuresideimg {
         width: 100%;
         object-fit: contain;
@@ -616,7 +617,7 @@
         width: 90%;
         margin: 7.5rem 0 6rem 0;
         position: relative;
-        height: 45rem;
+        height: 46.5rem;
         video {
           width: 100%;
           object-fit: cover;
@@ -673,7 +674,7 @@
       width: 48%;
       margin: 16rem 0 0 0;
       .p-bottom-box {
-        width: 65%;
+        width: 66%;
         position: relative;
         img {
           object-fit: contain;
