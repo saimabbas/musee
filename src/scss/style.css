@@ -5,14 +5,17 @@
   src: url(../assets/fonts/GT-Alpina.ttf) format("truetype");
   font-display: block;
 }
+
 @font-face {
   font-family: Sectra;
   src: url(../assets/fonts/GT-Sectra-Fine-Regular.ttf) format("truetype");
   font-display: block;
 }
+
 * {
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   font-family: "Inconsolata", monospace;
   font-family: "Inter", sans-serif;
@@ -31,52 +34,96 @@
 }
 
 .appmainbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
 }
+
 .appmainbox header {
   width: 100%;
 }
+
 .appmainbox header .headerbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 3.75rem 4.75rem;
 }
+
 .appmainbox header .headerbox .headerleft {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .appmainbox header .headerbox .headerleft img {
   width: 7.5rem;
   -o-object-fit: contain;
      object-fit: contain;
 }
+
 .appmainbox header .headerbox .headerright {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .appmainbox header .headerbox .headerright a {
   text-decoration: none;
-  font-size: 1.65rem;
+  font-size: 1.75rem;
   color: #000000;
   font-weight: 700;
   margin: 0 0 0 2.5rem;
   font-family: "Inconsolata", monospace;
   text-transform: uppercase;
 }
+
 .appmainbox .herosection {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 1rem auto 6rem auto;
 }
+
 .appmainbox .herosection p {
   font-size: 1.6rem;
   font-weight: 600;
@@ -86,6 +133,7 @@
   text-align: center;
   margin: 0 0 1rem 0;
 }
+
 .appmainbox .herosection h6 {
   font-size: 8.5rem;
   font-weight: 600;
@@ -95,6 +143,7 @@
   width: 100%;
   text-align: center;
 }
+
 .appmainbox .herosection h6 span {
   font-family: Alpina;
   font-style: italic;
@@ -102,20 +151,34 @@
   text-transform: none;
   font-size: 8.5rem;
 }
+
 .appmainbox .herosection .heroinputbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 35%;
   margin: 2rem auto 0 auto;
   border-radius: 1000px;
   background-color: #f7f7f7;
   padding: 0.75rem 0.75rem 0.75rem 3rem;
 }
+
 .appmainbox .herosection .heroinputbtn input {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 55%;
   height: 100%;
   font-size: 1.5rem;
@@ -125,31 +188,49 @@
   border: unset;
   background-color: transparent;
 }
-.appmainbox .herosection .heroinputbtn inputinput::-moz-placeholder {
+
+.appmainbox .herosection .heroinputbtn inputinput::-webkit-input-placeholder {
   font-size: 1.5rem;
   color: #808080;
   font-weight: 500;
   font-family: "Inter", sans-serif;
 }
+
 .appmainbox .herosection .heroinputbtn inputinput:-ms-input-placeholder {
   font-size: 1.5rem;
   color: #808080;
   font-weight: 500;
   font-family: "Inter", sans-serif;
 }
+
+.appmainbox .herosection .heroinputbtn inputinput::-ms-input-placeholder {
+  font-size: 1.5rem;
+  color: #808080;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+
 .appmainbox .herosection .heroinputbtn inputinput::placeholder {
   font-size: 1.5rem;
   color: #808080;
   font-weight: 500;
   font-family: "Inter", sans-serif;
 }
+
 .appmainbox .herosection .heroinputbtn input:focus {
   outline: none;
 }
+
 .appmainbox .herosection .heroinputbtn button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #ffffff;
   font-size: 1.7rem;
   font-weight: 500;
@@ -160,32 +241,51 @@
   border: 1px solid transparent;
   width: 35%;
   cursor: pointer;
-}
-.appmainbox .herosection .heroinputbtn button:hover {
-  border: 1px solid #000000;
-  background-color: #f7f7f7;
-  color: #000000;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+
+.appmainbox .herosection .heroinputbtn button:hover {
+  opacity: 0.85;
+}
+
 .appmainbox .marketplacebox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 90%;
   margin: 4rem auto 0rem auto;
 }
+
 .appmainbox .marketplacebox .marketplaceleft {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 35%;
-  margin: 0 0 0 8rem;
+  padding: 0 0 0 8rem;
 }
+
 .appmainbox .marketplacebox .marketplaceleft .marketplaceheading {
   margin: 5rem 0 0 0;
   position: relative;
 }
+
 .appmainbox .marketplacebox .marketplaceleft .marketplaceheading h6 {
   position: absolute;
   top: -6.5rem;
@@ -197,6 +297,7 @@
   font-style: italic;
   z-index: -2;
 }
+
 .appmainbox .marketplacebox .marketplaceleft .marketplaceheading h5 {
   font-size: 5rem;
   color: #000000;
@@ -205,6 +306,7 @@
   font-style: italic;
   z-index: 2;
 }
+
 .appmainbox .marketplacebox .marketplaceleft p {
   font-size: 1.8rem;
   font-weight: 500;
@@ -213,21 +315,39 @@
   margin: 1.85rem 0;
   line-height: 26px;
 }
+
 .appmainbox .marketplacebox .marketplaceleft .pointsbox {
-  margin: 1.5rem 1rem 1rem 1.75rem;
+  padding: 1.5rem 1rem 1rem 1.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 100%;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .appmainbox .marketplacebox .marketplaceleft .pointsbox .mainpoint {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 100%;
   margin: 0 0 2.25rem 0;
 }
+
 .appmainbox .marketplacebox .marketplaceleft .pointsbox .mainpoint svg {
   min-width: 2.85rem;
   min-height: 2.85rem;
@@ -235,6 +355,7 @@
   max-height: 2.85rem;
   color: #000000;
 }
+
 .appmainbox .marketplacebox .marketplaceleft .pointsbox .mainpoint h6 {
   font-size: 1.7rem;
   color: #666666;
@@ -242,20 +363,38 @@
   margin: 0rem 0 0 1.5rem;
   line-height: 26px;
 }
+
 .appmainbox .marketplacebox .marketplaceleft .marketleftbottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 100%;
   margin: 3rem 0 0 0;
 }
+
 .appmainbox .marketplacebox .marketplaceleft .marketleftbottom .marketbottomtext {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 80%;
 }
+
 .appmainbox .marketplacebox .marketplaceleft .marketleftbottom .marketbottomtext h5 {
   font-size: 2.75rem;
   color: #000000;
@@ -264,12 +403,20 @@
   font-style: italic;
   margin: 0 0 1.75rem 0;
 }
+
 .appmainbox .marketplacebox .marketplaceleft .marketleftbottom .marketbottomimg {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   position: relative;
 }
+
 .appmainbox .marketplacebox .marketplaceleft .marketleftbottom .marketbottomimg img {
   height: 21rem;
   -o-object-fit: cover;
@@ -278,24 +425,37 @@
   right: -10rem;
   top: -6.5rem;
 }
+
 .appmainbox .marketplacebox .marketplaceright {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 50.5%;
 }
+
 .appmainbox .marketplacebox .marketplaceright .p-bottom-box {
   position: relative;
   width: 100%;
   height: 41rem;
 }
+
 .appmainbox .marketplacebox .marketplaceright .p-bottom-box video {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
 }
+
 .appmainbox .marketplacebox .marketplaceright .p-bottom-box p {
   position: absolute;
   left: 2rem;
@@ -305,6 +465,7 @@
   font-weight: 400;
   font-family: "Inter";
 }
+
 .appmainbox .marketplacebox .marketplaceright h6 {
   margin: 4rem 0 0 1rem;
   font-size: 3.5rem;
@@ -314,29 +475,46 @@
   font-style: italic;
   width: 95%;
 }
+
 .appmainbox .roadmapsection {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 90%;
   margin: 0rem auto 1rem auto;
 }
+
 .appmainbox .roadmapsection .marketplaceright {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   width: 48%;
   margin: 14rem 0 0 0;
 }
+
 .appmainbox .roadmapsection .marketplaceright .p-bottom-box {
   width: 72%;
   position: relative;
 }
+
 .appmainbox .roadmapsection .marketplaceright .p-bottom-box img {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
+
 .appmainbox .roadmapsection .marketplaceright .p-bottom-box p {
   position: absolute;
   left: 2rem;
@@ -346,18 +524,31 @@
   font-weight: 400;
   font-family: "Inter";
 }
+
 .appmainbox .roadmapsection .marketplaceleft {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 42%;
-  transform: translate(0%, -6%);
+  -webkit-transform: translate(0%, -6%);
+          transform: translate(0%, -6%);
 }
+
 .appmainbox .roadmapsection .marketplaceleft .marketplaceheading {
   margin: 5rem 0 0 0;
   position: relative;
 }
+
 .appmainbox .roadmapsection .marketplaceleft .marketplaceheading h6 {
   position: absolute;
   top: -6.5rem;
@@ -369,6 +560,7 @@
   font-style: italic;
   z-index: -2;
 }
+
 .appmainbox .roadmapsection .marketplaceleft .marketplaceheading h5 {
   font-size: 5rem;
   color: #000000;
@@ -377,6 +569,7 @@
   font-style: italic;
   z-index: 2;
 }
+
 .appmainbox .roadmapsection .marketplaceleft p {
   font-size: 1.8rem;
   width: 90%;
@@ -386,21 +579,39 @@
   margin: 1.75rem 0;
   line-height: 26px;
 }
+
 .appmainbox .roadmapsection .marketplaceleft .pointsbox {
-  margin: 0 1rem 1rem 1.75rem;
+  padding: 0 1rem 1rem 1.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 100%;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .appmainbox .roadmapsection .marketplaceleft .pointsbox .mainpoint {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 100%;
   margin: 0 0 1.75rem 0;
 }
+
 .appmainbox .roadmapsection .marketplaceleft .pointsbox .mainpoint svg {
   min-width: 2.85rem;
   min-height: 2.85rem;
@@ -408,6 +619,7 @@
   max-height: 2.85rem;
   color: #000000;
 }
+
 .appmainbox .roadmapsection .marketplaceleft .pointsbox .mainpoint h6 {
   font-size: 1.7rem;
   color: #666666;
@@ -415,20 +627,38 @@
   margin: 0rem 0 0 1.5rem;
   line-height: 26px;
 }
+
 .appmainbox .roadmapsection .marketplaceleft .marketleftbottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 100%;
   margin: 3rem 0 0 0;
 }
+
 .appmainbox .roadmapsection .marketplaceleft .marketleftbottom .marketbottomtext {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 100%;
 }
+
 .appmainbox .roadmapsection .marketplaceleft .marketleftbottom .marketbottomtext h5 {
   font-size: 2.75rem;
   color: #000000;
@@ -437,26 +667,48 @@
   font-style: italic;
   margin: 0 0 1.75rem 0;
 }
+
 .appmainbox .metagalleriesbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 64%;
   margin: 0 auto 2rem auto;
 }
+
 .appmainbox .metagalleriesbox .metagalleriestext {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0 0 2rem 8rem;
   width: 100%;
 }
+
 .appmainbox .metagalleriesbox .metagalleriestext .marketplaceheading {
   margin: 2rem 0 0rem 0;
   position: relative;
 }
+
 .appmainbox .metagalleriesbox .metagalleriestext .marketplaceheading h6 {
   position: absolute;
   top: -6.5rem;
@@ -468,6 +720,7 @@
   font-style: italic;
   z-index: -2;
 }
+
 .appmainbox .metagalleriesbox .metagalleriestext .marketplaceheading h5 {
   font-size: 5rem;
   color: #000000;
@@ -476,6 +729,7 @@
   font-style: italic;
   z-index: 2;
 }
+
 .appmainbox .metagalleriesbox .metagalleriestext p {
   font-size: 1.8rem;
   font-weight: 500;
@@ -485,21 +739,39 @@
   line-height: 26px;
   width: 50%;
 }
+
 .appmainbox .metagalleriesbox .metagalleriestext .pointsbox {
-  margin: 0 1rem 1rem 1.75rem;
+  padding: 0 1rem 1rem 1.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 100%;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .appmainbox .metagalleriesbox .metagalleriestext .pointsbox .mainpoint {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 100%;
   margin: 0 0 1.75rem 0;
 }
+
 .appmainbox .metagalleriesbox .metagalleriestext .pointsbox .mainpoint svg {
   min-width: 2.85rem;
   min-height: 2.85rem;
@@ -507,6 +779,7 @@
   max-height: 2.85rem;
   color: #000000;
 }
+
 .appmainbox .metagalleriesbox .metagalleriestext .pointsbox .mainpoint h6 {
   font-size: 1.7rem;
   color: #666666;
@@ -514,32 +787,44 @@
   margin: 0rem 0 0 1.5rem;
   line-height: 26px;
 }
+
 .appmainbox .metagalleriesbox .metagalleriesimg {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
+
 .appmainbox .metagalleriesbox .metagalleriesimg img {
   width: 48%;
   -o-object-fit: contain;
      object-fit: contain;
 }
+
 .appmainbox .fsimgbox {
   position: relative;
   width: 100%;
 }
+
 .appmainbox .fsimgbox .p-bottom-box-fsimg {
   position: absolute;
   bottom: 33%;
   right: 0%;
   width: 18.5rem;
 }
+
 .appmainbox .fsimgbox .p-bottom-box-fsimg img.futuresideimg {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
+
 .appmainbox .fsimgbox .p-bottom-box-fsimg p {
   position: absolute;
   left: 2rem;
@@ -549,25 +834,44 @@
   font-weight: 400;
   font-family: "Inter";
 }
+
 .appmainbox .futuresection {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 90%;
   margin: 6rem auto 1rem auto;
 }
+
 .appmainbox .futuresection .futuresectionleft {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 35%;
-  margin: 0 0 0 8rem;
+  padding: 0 0 0 8rem;
 }
+
 .appmainbox .futuresection .futuresectionleft .marketplaceheading {
   margin: 5rem 0 0 0;
   position: relative;
 }
+
 .appmainbox .futuresection .futuresectionleft .marketplaceheading h6 {
   position: absolute;
   top: -6.5rem;
@@ -579,6 +883,7 @@
   font-style: italic;
   z-index: -2;
 }
+
 .appmainbox .futuresection .futuresectionleft .marketplaceheading h5 {
   font-size: 5rem;
   color: #000000;
@@ -587,6 +892,7 @@
   font-style: italic;
   z-index: 2;
 }
+
 .appmainbox .futuresection .futuresectionleft p {
   font-size: 1.8rem;
   font-weight: 500;
@@ -595,21 +901,39 @@
   margin: 1.85rem 0;
   line-height: 26px;
 }
+
 .appmainbox .futuresection .futuresectionleft .pointsbox {
-  margin: 0 1rem 1rem 1.75rem;
+  padding: 0 1rem 1rem 1.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 100%;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .appmainbox .futuresection .futuresectionleft .pointsbox .mainpoint {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 100%;
   margin: 0 0 1.75rem 0;
 }
+
 .appmainbox .futuresection .futuresectionleft .pointsbox .mainpoint svg {
   min-width: 2.85rem;
   min-height: 2.85rem;
@@ -617,6 +941,7 @@
   max-height: 2.85rem;
   color: #000000;
 }
+
 .appmainbox .futuresection .futuresectionleft .pointsbox .mainpoint h6 {
   font-size: 1.7rem;
   color: #666666;
@@ -624,18 +949,21 @@
   margin: 0rem 0 0 1.5rem;
   line-height: 26px;
 }
+
 .appmainbox .futuresection .futuresectionleft .p-bottom-box {
   width: 90%;
   margin: 7.5rem 0 6rem 0;
   position: relative;
   height: 46.5rem;
 }
+
 .appmainbox .futuresection .futuresectionleft .p-bottom-box video {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
 }
+
 .appmainbox .futuresection .futuresectionleft .p-bottom-box p {
   position: absolute;
   left: 2rem;
@@ -646,15 +974,26 @@
   font-family: "Inter";
   margin: 0;
 }
+
 .appmainbox .futuresection .futuresectionleft .createdwantedbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 90%;
   background-color: #000000;
   padding: 4rem 3rem;
 }
+
 .appmainbox .futuresection .futuresectionleft .createdwantedbox h6 {
   font-size: 4rem;
   font-weight: 400;
@@ -662,10 +1001,17 @@
   font-style: italic;
   color: #ffffff;
 }
+
 .appmainbox .futuresection .futuresectionleft .createdwantedbox button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   border-radius: 1000px;
   font-size: 1.7rem;
@@ -676,23 +1022,36 @@
   border: unset;
   margin: 2rem auto 0 auto;
 }
+
 .appmainbox .futuresection .futuresectionright {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 48%;
   margin: 16rem 0 0 0;
 }
+
 .appmainbox .futuresection .futuresectionright .p-bottom-box {
   width: 66%;
   position: relative;
 }
+
 .appmainbox .futuresection .futuresectionright .p-bottom-box img {
   -o-object-fit: contain;
      object-fit: contain;
   width: 100%;
 }
+
 .appmainbox .futuresection .futuresectionright .p-bottom-box p {
   position: absolute;
   left: 2rem;
@@ -703,14 +1062,25 @@
   font-family: "Inter";
   margin: 0;
 }
+
 .appmainbox .futuresection .futuresectionright .joinbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 80%;
   margin: 7rem 0 0 0;
 }
+
 .appmainbox .futuresection .futuresectionright .joinbox h6 {
   font-size: 3.95rem;
   color: #000000;
@@ -718,25 +1088,40 @@
   font-family: "Inconsolata", monospace;
   font-style: normal;
 }
+
 .appmainbox .futuresection .futuresectionright .joinbox h6 span {
   font-family: Alpina;
   font-style: italic;
   font-weight: 500;
 }
+
 .appmainbox .futuresection .futuresectionright .joinbox .heroinputbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 90%;
   margin: 2rem auto 0 0;
   border-radius: 1000px;
   background-color: #f7f7f7;
   padding: 0.75rem 0.75rem 0.75rem 3rem;
 }
+
 .appmainbox .futuresection .futuresectionright .joinbox .heroinputbtn input {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 55%;
   height: 100%;
   font-size: 1.5rem;
@@ -746,31 +1131,49 @@
   border: unset;
   background-color: transparent;
 }
-.appmainbox .futuresection .futuresectionright .joinbox .heroinputbtn inputinput::-moz-placeholder {
+
+.appmainbox .futuresection .futuresectionright .joinbox .heroinputbtn inputinput::-webkit-input-placeholder {
   font-size: 1.5rem;
   color: #808080;
   font-weight: 500;
   font-family: "Inter", sans-serif;
 }
+
 .appmainbox .futuresection .futuresectionright .joinbox .heroinputbtn inputinput:-ms-input-placeholder {
   font-size: 1.5rem;
   color: #808080;
   font-weight: 500;
   font-family: "Inter", sans-serif;
 }
+
+.appmainbox .futuresection .futuresectionright .joinbox .heroinputbtn inputinput::-ms-input-placeholder {
+  font-size: 1.5rem;
+  color: #808080;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+
 .appmainbox .futuresection .futuresectionright .joinbox .heroinputbtn inputinput::placeholder {
   font-size: 1.5rem;
   color: #808080;
   font-weight: 500;
   font-family: "Inter", sans-serif;
 }
+
 .appmainbox .futuresection .futuresectionright .joinbox .heroinputbtn input:focus {
   outline: none;
 }
+
 .appmainbox .futuresection .futuresectionright .joinbox .heroinputbtn button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #ffffff;
   font-size: 1.7rem;
   font-weight: 500;
@@ -782,29 +1185,42 @@
   width: 37%;
   cursor: pointer;
 }
+
 .appmainbox .futuresection .futuresectionright .joinbox .heroinputbtn button:hover {
   border: 1px solid #000000;
   background-color: #f7f7f7;
   color: #000000;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+
 .appmainbox .futuresection .futuresectionright .frlastimgbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   margin: 14rem 0 0 0;
 }
+
 .appmainbox .futuresection .futuresectionright .frlastimgbox .p-bottom-box-frleft {
   width: 50%;
   position: relative;
 }
+
 .appmainbox .futuresection .futuresectionright .frlastimgbox .p-bottom-box-frleft img.frleft {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  transform: translate(-25%, 0);
+  -webkit-transform: translate(-25%, 0);
+          transform: translate(-25%, 0);
 }
+
 .appmainbox .futuresection .futuresectionright .frlastimgbox .p-bottom-box-frleft p {
   position: absolute;
   left: -6rem;
@@ -815,15 +1231,18 @@
   font-family: "Inter";
   margin: 0;
 }
+
 .appmainbox .futuresection .futuresectionright .frlastimgbox .p-bottom-box-frright {
   width: 40%;
   position: relative;
 }
+
 .appmainbox .futuresection .futuresectionright .frlastimgbox .p-bottom-box-frright img.frright {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
+
 .appmainbox .futuresection .futuresectionright .frlastimgbox .p-bottom-box-frright p {
   position: absolute;
   left: 2rem;
@@ -834,33 +1253,57 @@
   font-family: "Inter";
   margin: 0;
 }
+
 .appmainbox footer {
   width: 100%;
   margin: 4rem 0;
 }
+
 .appmainbox footer .footerbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 80%;
   margin: 2rem auto 0 auto;
 }
+
 .appmainbox footer .footerbox .footerright {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .appmainbox footer .footerbox .footerright p {
   font-size: 1.3rem;
   color: #000000;
   font-weight: 500;
   font-family: "Inter", sans-serif;
 }
+
 .appmainbox footer .footerbox .footerleft {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .appmainbox footer .footerbox .footerleft a {
   text-decoration: none;
   font-size: 1.3rem;
@@ -874,86 +1317,95 @@
   body {
     overflow-x: hidden;
   }
-
-  .appmainbox .marketplacebox .marketplaceleft .marketleftbottom .marketbottomimg img {
+  .appmainbox
+.marketplacebox
+.marketplaceleft
+.marketleftbottom
+.marketbottomimg
+img {
     height: 15rem;
   }
-
   .appmainbox .futuresection img.futuresideimg {
     height: 35rem;
     width: 15rem;
   }
-
   .appmainbox .futuresection .futuresectionright .frlastimgbox img.frleft {
     height: 25rem;
   }
-
   .appmainbox .metagalleriesbox {
     width: 100%;
   }
-
   .appmainbox .metagalleriesbox .metagalleriestext {
     margin: 0 0 2rem 4rem;
   }
-
   .appmainbox .futuresection .futuresectionright .joinbox h6 {
     font-size: 3.25rem;
   }
-
   .appmainbox .fsimgbox img.futuresideimg {
     bottom: 35%;
     height: 35rem;
     width: 16rem;
   }
-
   .appmainbox .futuresection .futuresectionleft .createdwantedbox h6 {
     font-size: 3.75rem;
   }
-
   .appmainbox .futuresection .futuresectionright .joinbox .heroinputbtn button {
     font-size: 1.6rem;
     margin: 1.5rem 0 0 0;
     width: 100%;
   }
-
   .appmainbox .futuresection .futuresectionright .joinbox .heroinputbtn {
     width: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 0;
     background-color: transparent;
   }
-
   .appmainbox .futuresection .futuresectionright .joinbox .heroinputbtn input {
     width: 100%;
     background-color: #f7f7f7;
     padding: 2rem 3rem;
     border-radius: 10000px;
   }
-
   .appmainbox .herosection .heroinputbtn {
     width: 60%;
   }
 }
+
 @media screen and (max-width: 850px) {
+  .appmainbox .roadmapsection .marketplaceleft {
+    padding: 0 0 0 2.5rem;
+  }
+  .appmainbox .roadmapsection {
+    margin: 10rem 0 0 0;
+  }
   .appmainbox .herosection h6 {
     font-size: 6.5rem;
   }
   .appmainbox .herosection h6 span {
     font-size: 6.5rem;
   }
-
   .appmainbox .herosection .heroinputbtn {
     width: 65%;
   }
-
   .appmainbox .marketplacebox {
     width: 100%;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .appmainbox .marketplacebox .marketplaceleft {
     width: 100%;
+    padding: 0 0 0 2.5rem;
   }
   .appmainbox .marketplacebox .marketplaceleft .marketplaceheading {
     margin: 5rem 0 0 3rem;
@@ -967,13 +1419,16 @@
   .appmainbox .marketplacebox .marketplaceright {
     width: 100%;
   }
-
   .appmainbox .roadmapsection {
     width: 100%;
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   .appmainbox .roadmapsection .marketplaceright {
     width: 100%;
+    margin: 5rem 0 0 0;
   }
   .appmainbox .roadmapsection .marketplaceright img {
     width: 100%;
@@ -988,7 +1443,6 @@
   .appmainbox .roadmapsection .marketplaceleft .marketplaceheading br {
     display: none;
   }
-
   .appmainbox .metagalleriesbox {
     width: 100%;
   }
@@ -998,10 +1452,12 @@
   .appmainbox .metagalleriesbox .metagalleriestext p {
     width: 70%;
   }
-
   .appmainbox .futuresection {
     width: 100%;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .appmainbox .futuresection .futuresectionleft {
     width: 100%;
@@ -1029,7 +1485,8 @@
   .appmainbox .futuresection .futuresectionright .frlastimgbox img.frleft {
     height: 30rem;
     width: 33%;
-    transform: translate(-15%, 0);
+    -webkit-transform: translate(-15%, 0);
+            transform: translate(-15%, 0);
   }
   .appmainbox .futuresection .futuresectionright .joinbox .heroinputbtn {
     width: 95%;
@@ -1040,25 +1497,22 @@
     right: -7%;
     bottom: 22%;
   }
-
   .appmainbox .futuresection .futuresectionleft video {
     width: 100%;
     margin: 7rem 0 5rem 0;
   }
 }
+
 @media screen and (max-width: 650px) {
   .marketplaceheading h5 {
     font-size: 4.5rem;
   }
-
   .box {
     padding: 0 2.5rem;
   }
-
   .appmainbox header .headerbox {
     padding: 2rem;
   }
-
   .appmainbox .herosection h6 {
     font-size: 5rem;
   }
@@ -1068,8 +1522,12 @@
   .appmainbox .herosection h6 br {
     display: none;
   }
-
-  .appmainbox .marketplacebox .marketplaceleft .marketleftbottom .marketbottomimg img {
+  .appmainbox
+.marketplacebox
+.marketplaceleft
+.marketleftbottom
+.marketbottomimg
+img {
     width: 100%;
     height: 13rem;
     -o-object-fit: cover;
@@ -1078,198 +1536,240 @@
     right: 1rem;
     top: -5rem;
   }
-
   .appmainbox .marketplacebox .marketplaceleft .marketplaceheading h5 {
     font-size: 3.5rem;
   }
-
   .appmainbox .marketplacebox .marketplaceleft .marketplaceheading {
     margin: 5rem 0 0 4rem;
   }
-
   .appmainbox .roadmapsection .marketplaceleft .marketplaceheading {
-    margin: 7rem 0 0 5rem;
+    margin: 5rem 0 0 4rem;
   }
-
   .appmainbox .roadmapsection .marketplaceleft .marketplaceheading h5 {
     font-size: 3.5rem;
   }
-
   .appmainbox .metagalleriesbox .metagalleriestext {
     margin: 7rem 0 0 0rem;
   }
-
   .appmainbox .metagalleriesbox .metagalleriestext .marketplaceheading {
     margin: 2rem 0 0rem 4rem;
   }
-
   .appmainbox .metagalleriesbox .metagalleriestext .marketplaceheading h5 {
     font-size: 3.5rem;
   }
   .appmainbox .metagalleriesbox .metagalleriestext .marketplaceheading h5 br {
     display: none;
   }
-
-  .appmainbox .roadmapsection .marketplaceright img {
-    height: 30rem;
-  }
-
   .appmainbox .metagalleriesbox .metagalleriesimg {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-
   .appmainbox .metagalleriesbox .metagalleriesimg img {
     height: 30rem;
     width: 100%;
     margin: 0 0 2rem 0;
   }
-
   .appmainbox .futuresection {
     margin: 2rem 0;
   }
-
   .appmainbox .futuresection .futuresectionleft .marketplaceheading {
     margin: 5rem 0 0 4rem;
   }
-
   .appmainbox .futuresection .futuresectionleft video {
     width: 100%;
     height: 40rem;
     margin: 2rem 0 4rem 0;
   }
-
   .appmainbox .futuresection .futuresectionleft .createdwantedbox {
     width: 100%;
   }
-
   .appmainbox .futuresection img.futuresideimg {
     display: none;
   }
-
   .appmainbox .futuresection .futuresectionright img {
     height: 30rem;
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
   }
-
   .appmainbox .futuresection .futuresectionright .joinbox {
     width: 100%;
     margin: 4rem 0 0 0;
   }
-
   .appmainbox .futuresection .futuresectionright .joinbox .heroinputbtn {
     width: 100%;
   }
-
   .appmainbox .futuresection .futuresectionright .joinbox h6 {
     text-align: center;
     font-size: 3rem;
     width: 100%;
   }
-
   .appmainbox .futuresection .futuresectionright .frlastimgbox img.frleft {
     height: 30rem;
     width: 55%;
-    transform: translate(-15%, 0);
+    -webkit-transform: translate(-15%, 0);
+            transform: translate(-15%, 0);
   }
-
   .appmainbox .futuresection .futuresectionright .frlastimgbox img.frright {
     width: 40%;
     height: 13rem;
     -o-object-fit: cover;
        object-fit: cover;
   }
-
   .appmainbox footer .footerbox {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .appmainbox footer .footerbox .footerleft {
     margin: 3rem 0 0 0;
   }
-
   .appmainbox .herosection .heroinputbtn button {
     font-size: 1.6rem;
     margin: 1.5rem 0 0 0;
     width: 100%;
   }
-
   .appmainbox .herosection .heroinputbtn {
     width: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 0;
     background-color: transparent;
   }
-
   .appmainbox .herosection .heroinputbtn input {
     width: 100%;
     background-color: #f7f7f7;
     padding: 2rem 3rem;
     border-radius: 10000px;
   }
-
   .appmainbox .marketplacebox .marketplaceleft .marketplaceheading h6 {
     top: -4.5rem;
     font-size: 8rem;
   }
-
   .appmainbox .roadmapsection .marketplaceleft .marketplaceheading h6 {
     top: -4.5rem;
     font-size: 8rem;
   }
-
   .appmainbox .metagalleriesbox .metagalleriestext .marketplaceheading h6 {
     top: -4.5rem;
     font-size: 8rem;
   }
-
   .appmainbox .futuresection .futuresectionleft .marketplaceheading h6 {
     top: -4.5rem;
     font-size: 8rem;
   }
-
   .appmainbox .futuresection .futuresectionleft .marketplaceheading h5 {
     font-size: 3.5rem;
   }
-
   .appmainbox .futuresection .futuresectionright .joinbox .heroinputbtn button {
     font-size: 1.6rem;
   }
-
   .appmainbox .futuresection .futuresectionright .joinbox .heroinputbtn button {
     font-size: 1.6rem;
     margin: 1.5rem 0 0 0;
     width: 100%;
   }
-
   .appmainbox .futuresection .futuresectionright .joinbox .heroinputbtn {
     width: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 0;
     background-color: transparent;
   }
-
   .appmainbox .futuresection .futuresectionright .joinbox .heroinputbtn input {
     width: 100%;
     background-color: #f7f7f7;
     padding: 2rem 3rem;
     border-radius: 10000px;
   }
-
   .appmainbox .futuresection .futuresectionleft .createdwantedbox h6 {
     font-size: 3.5rem;
   }
-
   .appmainbox .marketplacebox .marketplaceright h6 {
     font-size: 2.25rem;
     margin: 2rem 0 0 0;
   }
-
   .appmainbox .fsimgbox img.futuresideimg {
     display: none;
   }
-}/*# sourceMappingURL=style.css.map */
+  .appmainbox .marketplacebox .marketplaceleft .pointsbox,
+  .appmainbox .roadmapsection .marketplaceleft .pointsbox {
+    padding: 1.5rem 0;
+  }
+  .appmainbox .herosection {
+    margin: 7.5rem auto;
+  }
+  .appmainbox .marketplacebox {
+    margin: 0;
+  }
+  .appmainbox .roadmapsection .marketplaceright img {
+    height: unset;
+  }
+  .appmainbox .roadmapsection .marketplaceright .p-bottom-box {
+    width: 100%;
+  }
+  .appmainbox .roadmapsection .marketplaceright {
+    margin: 0;
+  }
+  .appmainbox .metagalleriesbox .metagalleriestext p {
+    width: 100%;
+  }
+  .appmainbox .futuresection .futuresectionleft {
+    padding: 0;
+  }
+  .appmainbox .futuresection .futuresectionleft video {
+    margin: 0;
+  }
+  .appmainbox .futuresection .futuresectionleft p,
+  .appmainbox .futuresection .futuresectionleft .marketplaceheading {
+    padding: 0 0 0 2.5rem;
+  }
+  .appmainbox .futuresection .futuresectionleft .p-bottom-box,
+  .appmainbox .futuresection .futuresectionright .p-bottom-box {
+    width: 100%;
+  }
+  .appmainbox .futuresection .futuresectionright .p-bottom-box img {
+    height: unset;
+  }
+  .appmainbox
+.futuresection
+.futuresectionright
+.frlastimgbox
+.p-bottom-box-frleft
+img.frleft {
+    height: unset;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  .appmainbox
+.futuresection
+.futuresectionright
+.frlastimgbox
+.p-bottom-box-frleft
+p {
+    left: 2rem;
+  }
+  .appmainbox footer .footerbox .footerleft a {
+    margin: 0 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
