@@ -2,7 +2,7 @@ import React from "react";
 import Logo from "./assets/img/Logo.png";
 import Video1 from "./assets/video/Video1.mp4";
 import Video2 from "./assets/video/Video2.mp4";
-import Tag from "./assets/img/tag.png";
+import Tag from "./assets/img/tag.gif";
 import Roadmap from "./assets/img/roadmap.png";
 import Gallery1 from "./assets/img/gallery1.png";
 import Gallery2 from "./assets/img/gallery2.png";
@@ -33,9 +33,9 @@ const Home = () => {
         <div className="herosection">
           <p>Coming Summer 2022</p>
           <h6>
-            Introducing<span> Musée,</span>
+            <span>Musée, -</span>
             <br />
-            The<span> hub </span> of<span> web3 art.</span>
+            The<span> hub </span> of<span> Web3 art.</span>
           </h6>
           <div className="heroinputbtn">
             <input type="text" placeholder="Enter email address..." />
