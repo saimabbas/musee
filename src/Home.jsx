@@ -33,7 +33,7 @@ const Home = () => {
         <div className="herosection">
           <p>Coming Summer 2022</p>
           <h6>
-            <span>Musée, -</span>
+            Introducing<span> Musée,</span>
             <br />
             The<span> hub </span> of<span> Web3 art.</span>
           </h6>
